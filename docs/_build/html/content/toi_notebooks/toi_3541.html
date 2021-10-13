@@ -1,0 +1,1623 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TESS Atlas fit for TOI 3541 &#8212; TESS Atlas</title>
+    
+  <link href="../../_static/css/theme.css" rel="stylesheet" />
+  <link href="../../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+
+    
+  <link rel="stylesheet"
+    href="../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/sphinx-book-theme.e2363ea40746bee74734a24ffefccd78.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../../_static/js/index.1c5a1a01449ed65a7b51.js">
+
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/togglebutton.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="TESS Atlas fit for TOI 3552" href="toi_3552.html" />
+    <link rel="prev" title="TESS Atlas fit for TOI 3528" href="toi_3528.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../../_static/atlas_logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">TESS Atlas</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../index.html">
+   TESS Atlas
+  </a>
+ </li>
+</ul>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../example_loader.html">
+   Example Loader
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../citation.html">
+   Acknowledging/Citing TESS Atlas
+  </a>
+ </li>
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="../toi_fits.html">
+   TOI FITs
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_1015.html">
+     TESS Atlas fit for TOI 1015
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_1154.html">
+     TESS Atlas fit for TOI 1154
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_1167.html">
+     TESS Atlas fit for TOI 1167
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_1194.html">
+     TESS Atlas fit for TOI 1194
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_1225.html">
+     TESS Atlas fit for TOI 1225
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_1252.html">
+     TESS Atlas fit for TOI 1252
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_1275.html">
+     TESS Atlas fit for TOI 1275
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_1284.html">
+     TESS Atlas fit for TOI 1284
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_1318.html">
+     TESS Atlas fit for TOI 1318
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_1335.html">
+     TESS Atlas fit for TOI 1335
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_1349.html">
+     TESS Atlas fit for TOI 1349
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_1357.html">
+     TESS Atlas fit for TOI 1357
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_1361.html">
+     TESS Atlas fit for TOI 1361
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_1372.html">
+     TESS Atlas fit for TOI 1372
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_1376.html">
+     TESS Atlas fit for TOI 1376
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_1459.html">
+     TESS Atlas fit for TOI 1459
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_1499.html">
+     TESS Atlas fit for TOI 1499
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_1512.html">
+     TESS Atlas fit for TOI 1512
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_1617.html">
+     TESS Atlas fit for TOI 1617
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_1623.html">
+     TESS Atlas fit for TOI 1623
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_1629.html">
+     TESS Atlas fit for TOI 1629
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_165.html">
+     TESS Atlas fit for TOI 165
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_1675.html">
+     TESS Atlas fit for TOI 1675
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_1689.html">
+     TESS Atlas fit for TOI 1689
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_1698.html">
+     TESS Atlas fit for TOI 1698
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_1738.html">
+     TESS Atlas fit for TOI 1738
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_1740.html">
+     TESS Atlas fit for TOI 1740
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_1789.html">
+     TESS Atlas fit for TOI 1789
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_1798.html">
+     TESS Atlas fit for TOI 1798
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_1820.html">
+     TESS Atlas fit for TOI 1820
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_1845.html">
+     TESS Atlas fit for TOI 1845
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_186.html">
+     TESS Atlas fit for TOI 186
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_1879.html">
+     TESS Atlas fit for TOI 1879
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_1880.html">
+     TESS Atlas fit for TOI 1880
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_1904.html">
+     TESS Atlas fit for TOI 1904
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_1909.html">
+     TESS Atlas fit for TOI 1909
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_192.html">
+     TESS Atlas fit for TOI 192
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_1982.html">
+     TESS Atlas fit for TOI 1982
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_1991.html">
+     TESS Atlas fit for TOI 1991
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_1995.html">
+     TESS Atlas fit for TOI 1995
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_2003.html">
+     TESS Atlas fit for TOI 2003
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_2010.html">
+     TESS Atlas fit for TOI 2010
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_2064.html">
+     TESS Atlas fit for TOI 2064
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_2148.html">
+     TESS Atlas fit for TOI 2148
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_2165.html">
+     TESS Atlas fit for TOI 2165
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_2184.html">
+     TESS Atlas fit for TOI 2184
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_2188.html">
+     TESS Atlas fit for TOI 2188
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_2219.html">
+     TESS Atlas fit for TOI 2219
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_2247.html">
+     TESS Atlas fit for TOI 2247
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_2282.html">
+     TESS Atlas fit for TOI 2282
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_2300.html">
+     TESS Atlas fit for TOI 2300
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_2314.html">
+     TESS Atlas fit for TOI 2314
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_232.html">
+     TESS Atlas fit for TOI 232
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_2328.html">
+     TESS Atlas fit for TOI 2328
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_2353.html">
+     TESS Atlas fit for TOI 2353
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_2363.html">
+     TESS Atlas fit for TOI 2363
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_2413.html">
+     TESS Atlas fit for TOI 2413
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_2440.html">
+     TESS Atlas fit for TOI 2440
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_2467.html">
+     TESS Atlas fit for TOI 2467
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_254.html">
+     TESS Atlas fit for TOI 254
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_2550.html">
+     TESS Atlas fit for TOI 2550
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_2575.html">
+     TESS Atlas fit for TOI 2575
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_2578.html">
+     TESS Atlas fit for TOI 2578
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_2580.html">
+     TESS Atlas fit for TOI 2580
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_2610.html">
+     TESS Atlas fit for TOI 2610
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_2628.html">
+     TESS Atlas fit for TOI 2628
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_2640.html">
+     TESS Atlas fit for TOI 2640
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_2670.html">
+     TESS Atlas fit for TOI 2670
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_2798.html">
+     TESS Atlas fit for TOI 2798
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_282.html">
+     TESS Atlas fit for TOI 282
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_2835.html">
+     TESS Atlas fit for TOI 2835
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_2843.html">
+     TESS Atlas fit for TOI 2843
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_285.html">
+     TESS Atlas fit for TOI 285
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_2862.html">
+     TESS Atlas fit for TOI 2862
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_3008.html">
+     TESS Atlas fit for TOI 3008
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_3081.html">
+     TESS Atlas fit for TOI 3081
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_3112.html">
+     TESS Atlas fit for TOI 3112
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_3167.html">
+     TESS Atlas fit for TOI 3167
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_3172.html">
+     TESS Atlas fit for TOI 3172
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_3183.html">
+     TESS Atlas fit for TOI 3183
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_3205.html">
+     TESS Atlas fit for TOI 3205
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_3258.html">
+     TESS Atlas fit for TOI 3258
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_3264.html">
+     TESS Atlas fit for TOI 3264
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_328.html">
+     TESS Atlas fit for TOI 328
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_3291.html">
+     TESS Atlas fit for TOI 3291
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_3294.html">
+     TESS Atlas fit for TOI 3294
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_3346.html">
+     TESS Atlas fit for TOI 3346
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_3347.html">
+     TESS Atlas fit for TOI 3347
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_3359.html">
+     TESS Atlas fit for TOI 3359
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_3390.html">
+     TESS Atlas fit for TOI 3390
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_3396.html">
+     TESS Atlas fit for TOI 3396
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_3427.html">
+     TESS Atlas fit for TOI 3427
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_3434.html">
+     TESS Atlas fit for TOI 3434
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_3457.html">
+     TESS Atlas fit for TOI 3457
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_346.html">
+     TESS Atlas fit for TOI 346
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_3473.html">
+     TESS Atlas fit for TOI 3473
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_3481.html">
+     TESS Atlas fit for TOI 3481
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_3490.html">
+     TESS Atlas fit for TOI 3490
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_3527.html">
+     TESS Atlas fit for TOI 3527
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_3528.html">
+     TESS Atlas fit for TOI 3528
+    </a>
+   </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     TESS Atlas fit for TOI 3541
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_3552.html">
+     TESS Atlas fit for TOI 3552
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_360.html">
+     TESS Atlas fit for TOI 360
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_3609.html">
+     TESS Atlas fit for TOI 3609
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_3614.html">
+     TESS Atlas fit for TOI 3614
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_3629.html">
+     TESS Atlas fit for TOI 3629
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_3643.html">
+     TESS Atlas fit for TOI 3643
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_3685.html">
+     TESS Atlas fit for TOI 3685
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_3695.html">
+     TESS Atlas fit for TOI 3695
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_373.html">
+     TESS Atlas fit for TOI 373
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_3773.html">
+     TESS Atlas fit for TOI 3773
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_3776.html">
+     TESS Atlas fit for TOI 3776
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_3798.html">
+     TESS Atlas fit for TOI 3798
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_3820.html">
+     TESS Atlas fit for TOI 3820
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_3876.html">
+     TESS Atlas fit for TOI 3876
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_3973.html">
+     TESS Atlas fit for TOI 3973
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_4017.html">
+     TESS Atlas fit for TOI 4017
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_4024.html">
+     TESS Atlas fit for TOI 4024
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_4025.html">
+     TESS Atlas fit for TOI 4025
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_4048.html">
+     TESS Atlas fit for TOI 4048
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_4082.html">
+     TESS Atlas fit for TOI 4082
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_4083.html">
+     TESS Atlas fit for TOI 4083
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_4115.html">
+     TESS Atlas fit for TOI 4115
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_4192.html">
+     TESS Atlas fit for TOI 4192
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_421.html">
+     TESS Atlas fit for TOI 421
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_4216.html">
+     TESS Atlas fit for TOI 4216
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_4239.html">
+     TESS Atlas fit for TOI 4239
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_424.html">
+     TESS Atlas fit for TOI 424
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_4286.html">
+     TESS Atlas fit for TOI 4286
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_4376.html">
+     TESS Atlas fit for TOI 4376
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_4397.html">
+     TESS Atlas fit for TOI 4397
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_4453.html">
+     TESS Atlas fit for TOI 4453
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_470.html">
+     TESS Atlas fit for TOI 470
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_490.html">
+     TESS Atlas fit for TOI 490
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_514.html">
+     TESS Atlas fit for TOI 514
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_526.html">
+     TESS Atlas fit for TOI 526
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_541.html">
+     TESS Atlas fit for TOI 541
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_648.html">
+     TESS Atlas fit for TOI 648
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_650.html">
+     TESS Atlas fit for TOI 650
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_660.html">
+     TESS Atlas fit for TOI 660
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_731.html">
+     TESS Atlas fit for TOI 731
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_751.html">
+     TESS Atlas fit for TOI 751
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_827.html">
+     TESS Atlas fit for TOI 827
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_833.html">
+     TESS Atlas fit for TOI 833
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_850.html">
+     TESS Atlas fit for TOI 850
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_881.html">
+     TESS Atlas fit for TOI 881
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_892.html">
+     TESS Atlas fit for TOI 892
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_919.html">
+     TESS Atlas fit for TOI 919
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_950.html">
+     TESS Atlas fit for TOI 950
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_995.html">
+     TESS Atlas fit for TOI 995
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../../_sources/content/toi_notebooks/toi_3541.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/dfm/tess-atlas"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/dfm/tess-atlas/issues/new?title=Issue%20on%20page%20%2Fcontent/toi_notebooks/toi_3541.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/dfm/tess-atlas/main?urlpath=tree/content/toi_notebooks/toi_3541.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="../../_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        
+    </div>
+</div>
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#caveats">
+   Caveats
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#table-of-contents">
+   Table of Contents
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#getting-started">
+   Getting started
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#downloading-data">
+   Downloading Data
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#fitting-stellar-parameters">
+   Fitting stellar parameters
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#the-probabilistic-model">
+     The probabilistic model
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#sampling">
+     Sampling
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#results">
+   Results
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#post-processing-eccentricity">
+     Post-processing: Eccentricity
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#citations">
+   Citations
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#packages-used">
+     Packages used:
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="tess-atlas-fit-for-toi-3541">
+<h1>TESS Atlas fit for TOI 3541<a class="headerlink" href="#tess-atlas-fit-for-toi-3541" title="Permalink to this headline">¶</a></h1>
+<p><strong>Version: ‘0.2.1.dev30+g4180b55.d20210911’</strong></p>
+<p><strong>Note: This notebook was automatically generated as part of the TESS Atlas project. More information can be found on GitHub:</strong> <a class="reference external" href="https://github.com/dfm/tess-atlas">github.com/dfm/tess-atlas</a></p>
+<p>In this notebook, we do a quicklook fit for the parameters of the TESS Objects of Interest (TOI) in the system number 3541.
+To do this fit, we use the <a class="reference external" href="https://exoplanet.dfm.io">exoplanet</a> library and you can find more information about that project at <a class="reference external" href="https://exoplanet.dfm.io">exoplanet.dfm.io</a>.</p>
+<p>From here, you can scroll down and take a look at the fit results, or you can:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://colab.research.google.com/github/dfm/tess-atlas/blob/gh-pages/notebooks/%270.2.1.dev30+g4180b55.d20210911%27/toi-3541.ipynb">open the notebook in Google Colab to run the fit yourself</a>,</p></li>
+<li><p><a class="reference external" href="https://github.com/dfm/tess-atlas/blob/gh-pages/notebooks/%270.2.1.dev30+g4180b55.d20210911%27/toi-3541.ipynb">view the notebook on GitHub</a>, or</p></li>
+<li><p><a class="reference external" href="https://github.com/dfm/tess-atlas/raw/gh-pages/notebooks/%270.2.1.dev30+g4180b55.d20210911%27/toi-3541.ipynb">download the notebook</a>.</p></li>
+</ul>
+<div class="section" id="caveats">
+<h2>Caveats<a class="headerlink" href="#caveats" title="Permalink to this headline">¶</a></h2>
+<p>There are many caveats associated with this relatively simple “quicklook” type of analysis that should be kept in mind.
+Here are some of the main things that come to mind:</p>
+<ol class="simple">
+<li><p>The orbits that we fit are constrained to be <em>circular</em>. One major effect of this approximation is that the fit will significantly overestimate the confidence of the impact parameter constraint, so the results for impact parameter shouldn’t be taken too seriously.</p></li>
+<li><p>Transit timing variations, correlated noise, and (probably) your favorite systematics are ignored. Sorry!</p></li>
+<li><p>This notebook was generated automatically without human intervention. Use at your own risk!</p></li>
+</ol>
+</div>
+<div class="section" id="table-of-contents">
+<h2>Table of Contents<a class="headerlink" href="#table-of-contents" title="Permalink to this headline">¶</a></h2>
+<ol class="simple">
+<li><p><a class="reference external" href="#Getting-started">Getting started</a></p></li>
+<li><p><a class="reference external" href="#Downloading-Data">Downloading Data</a></p></li>
+<li><p><a class="reference external" href="#Fitting-stellar-parameters">Fitting stellar parameters</a></p></li>
+<li><p><a class="reference external" href="#Results">Results</a></p></li>
+<li><p><a class="reference external" href="#Citations">Citations</a></p></li>
+<li><p><a class="reference external" href="#Posterior-constraints">Posterior constraints</a></p></li>
+<li><p><a class="reference external" href="#Attribution">Attribution</a></p></li>
+</ol>
+</div>
+<div class="section" id="getting-started">
+<h2>Getting started<a class="headerlink" href="#getting-started" title="Permalink to this headline">¶</a></h2>
+<p>To get going, we’ll need to make out plots show up inline:</p>
+<div class="cell tag_exe docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%</span><span class="k">matplotlib</span> inline
+</pre></div>
+</div>
+</div>
+</div>
+<p>Then we’ll set up the plotting styles and do all of the imports:</p>
+<div class="cell tag_def docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">logging</span>
+<span class="kn">import</span> <span class="nn">os</span>
+
+<span class="kn">import</span> <span class="nn">exoplanet</span> <span class="k">as</span> <span class="nn">xo</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">pymc3</span> <span class="k">as</span> <span class="nn">pm</span>
+<span class="kn">import</span> <span class="nn">pymc3_ext</span> <span class="k">as</span> <span class="nn">pmx</span>
+<span class="kn">import</span> <span class="nn">theano.tensor</span> <span class="k">as</span> <span class="nn">tt</span>
+<span class="kn">from</span> <span class="nn">celerite2.theano</span> <span class="kn">import</span> <span class="n">GaussianProcess</span><span class="p">,</span> <span class="n">terms</span>
+<span class="kn">from</span> <span class="nn">pymc3.sampling</span> <span class="kn">import</span> <span class="n">MultiTrace</span>
+
+<span class="kn">from</span> <span class="nn">tess_atlas.data</span> <span class="kn">import</span> <span class="n">TICEntry</span>
+<span class="kn">from</span> <span class="nn">tess_atlas.analysis.eccenticity_reweighting</span> <span class="kn">import</span> <span class="p">(</span>
+    <span class="n">calculate_eccentricity_weights</span><span class="p">,</span>
+<span class="p">)</span>
+
+<span class="kn">from</span> <span class="nn">tess_atlas.utils</span> <span class="kn">import</span> <span class="n">notebook_initalisations</span>
+<span class="kn">from</span> <span class="nn">tess_atlas.utils</span> <span class="kn">import</span> <span class="n">NOTEBOOK_LOGGER_NAME</span>
+
+<span class="n">notebook_initalisations</span><span class="p">()</span>
+<span class="n">logger</span> <span class="o">=</span> <span class="n">logging</span><span class="o">.</span><span class="n">getLogger</span><span class="p">(</span><span class="n">NOTEBOOK_LOGGER_NAME</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell tag_exe docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s2">&quot;INTERACTIVE_PLOTS&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;FALSE&quot;</span>  <span class="c1"># &quot;TRUE&quot; for interactive plots</span>
+<span class="kn">from</span> <span class="nn">tess_atlas.plotting</span> <span class="kn">import</span> <span class="p">(</span>
+    <span class="n">plot_eccentricity_posteriors</span><span class="p">,</span>
+    <span class="n">plot_folded_lightcurve</span><span class="p">,</span>
+    <span class="n">plot_phase</span><span class="p">,</span>
+    <span class="n">plot_lightcurve</span><span class="p">,</span>
+    <span class="n">plot_posteriors</span><span class="p">,</span>
+<span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell tag_exe docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">TOI_NUMBER</span> <span class="o">=</span> <span class="mi">3541</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="downloading-data">
+<h2>Downloading Data<a class="headerlink" href="#downloading-data" title="Permalink to this headline">¶</a></h2>
+<p>Next, we grab some inital guesses for the TOI’s parameters from <a class="reference external" href="https://exofop.ipac.caltech.edu/tess/">ExoFOP</a> and download the TOI’s lightcurve with <a class="reference external" href="https://docs.lightkurve.org/index.html">Lightkurve</a>.</p>
+<p>We wrap the information in three objects, a <code class="docutils literal notranslate"><span class="pre">TIC</span> <span class="pre">Entry</span></code>, a <code class="docutils literal notranslate"><span class="pre">Planet</span> <span class="pre">Candidate</span></code> and finally a <code class="docutils literal notranslate"><span class="pre">Lightcurve</span> <span class="pre">Data</span></code> object.</p>
+<ul class="simple">
+<li><p>The <code class="docutils literal notranslate"><span class="pre">TIC</span> <span class="pre">Entry</span></code> object holds one or more <code class="docutils literal notranslate"><span class="pre">Planet</span> <span class="pre">Candidate</span></code>s (each candidate associated with one TOI id number) and a <code class="docutils literal notranslate"><span class="pre">Lightcurve</span> <span class="pre">Data</span></code> for associated with the candidates. Note that the <code class="docutils literal notranslate"><span class="pre">Lightcurve</span> <span class="pre">Data</span></code> object is initially the same fopr each candidate but may be masked according to the candidate transit’s period.</p></li>
+<li><p>The <code class="docutils literal notranslate"><span class="pre">Planet</span> <span class="pre">Candidate</span></code> holds informaiton on the TOI data collected by <a class="reference external" href="https://heasarc.gsfc.nasa.gov/docs/tess/pipeline.html">SPOC</a> (eg transit period, etc)</p></li>
+<li><p>The <code class="docutils literal notranslate"><span class="pre">Lightcurve</span> <span class="pre">Data</span></code> holds the lightcurve time and flux data for the planet candidates.</p></li>
+</ul>
+<p>Downloading the data (this may take a few minutes):</p>
+<div class="cell tag_exe docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">tic_entry</span> <span class="o">=</span> <span class="n">TICEntry</span><span class="o">.</span><span class="n">generate_tic_from_toi_number</span><span class="p">(</span><span class="n">toi</span><span class="o">=</span><span class="n">TOI_NUMBER</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2021-09-12 03:02:43,093 - TESS-ATLAS - INFO - Searching for lightkurve data with target=&#39;TIC 291147951&#39;, mission=&#39;TESS&#39;
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>No data found for target &quot;TIC 291147951&quot;.
+</pre></div>
+</div>
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">KeyError</span><span class="g g-Whitespace">                                  </span>Traceback (most recent call last)
+<span class="o">&lt;</span><span class="n">ipython</span><span class="o">-</span><span class="nb">input</span><span class="o">-</span><span class="mi">1</span><span class="o">-</span><span class="n">ceeecf8aa2aa</span><span class="o">&gt;</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="ne">----&gt; </span><span class="mi">1</span> <span class="n">tic_entry</span> <span class="o">=</span> <span class="n">TICEntry</span><span class="o">.</span><span class="n">generate_tic_from_toi_number</span><span class="p">(</span><span class="n">toi</span><span class="o">=</span><span class="n">TOI_NUMBER</span><span class="p">)</span>
+
+<span class="nn">~/Documents/projects/tess/tess-atlas/src/tess_atlas/data/tic_entry.py</span> in <span class="ni">generate_tic_from_toi_number</span><span class="nt">(cls, toi, tic_data)</span>
+<span class="g g-Whitespace">    </span><span class="mi">118</span> 
+<span class="g g-Whitespace">    </span><span class="mi">119</span>         <span class="c1"># Load lighcurve for TIC</span>
+<span class="ne">--&gt; </span><span class="mi">120</span>         <span class="n">lightcurve</span> <span class="o">=</span> <span class="n">LightCurveData</span><span class="o">.</span><span class="n">from_mast</span><span class="p">(</span><span class="n">tic</span><span class="o">=</span><span class="n">tic_number</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">121</span> 
+<span class="g g-Whitespace">    </span><span class="mi">122</span>         <span class="n">candidates</span> <span class="o">=</span> <span class="p">[]</span>
+
+<span class="nn">~/Documents/projects/tess/tess-atlas/src/tess_atlas/data/lightcurve_data.py</span> in <span class="ni">from_mast</span><span class="nt">(cls, tic)</span>
+<span class="g g-Whitespace">     </span><span class="mi">37</span> 
+<span class="g g-Whitespace">     </span><span class="mi">38</span>         <span class="c1"># Restrict to short cadence no &quot;fast&quot; cadence</span>
+<span class="ne">---&gt; </span><span class="mi">39</span>         <span class="n">search</span> <span class="o">=</span> <span class="n">search</span><span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">where</span><span class="p">(</span><span class="n">search</span><span class="o">.</span><span class="n">table</span><span class="p">[</span><span class="s2">&quot;t_exptime&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="mi">120</span><span class="p">)]</span>
+<span class="g g-Whitespace">     </span><span class="mi">40</span> 
+<span class="g g-Whitespace">     </span><span class="mi">41</span>         <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span>
+
+<span class="nn">~/anaconda3/envs/phase-marginalisation-test/lib/python3.7/site-packages/astropy/table/table.py</span> in <span class="ni">__getitem__</span><span class="nt">(self, item)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1865</span>     <span class="k">def</span> <span class="fm">__getitem__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">item</span><span class="p">):</span>
+<span class="g g-Whitespace">   </span><span class="mi">1866</span>         <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">item</span><span class="p">,</span> <span class="nb">str</span><span class="p">):</span>
+<span class="ne">-&gt; </span><span class="mi">1867</span>             <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">columns</span><span class="p">[</span><span class="n">item</span><span class="p">]</span>
+<span class="g g-Whitespace">   </span><span class="mi">1868</span>         <span class="k">elif</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">item</span><span class="p">,</span> <span class="p">(</span><span class="nb">int</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">integer</span><span class="p">)):</span>
+<span class="g g-Whitespace">   </span><span class="mi">1869</span>             <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">Row</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">item</span><span class="p">)</span>
+
+<span class="nn">~/anaconda3/envs/phase-marginalisation-test/lib/python3.7/site-packages/astropy/table/table.py</span> in <span class="ni">__getitem__</span><span class="nt">(self, item)</span>
+<span class="g g-Whitespace">    </span><span class="mi">244</span>         <span class="s2">&quot;&quot;&quot;</span>
+<span class="g g-Whitespace">    </span><span class="mi">245</span><span class="s2">         if isinstance(item, str):</span>
+<span class="ne">--&gt; </span><span class="mi">246</span><span class="s2">             return OrderedDict.__getitem__(self, item)</span>
+<span class="g g-Whitespace">    </span><span class="mi">247</span><span class="s2">         elif isinstance(item, (int, np.integer)):</span>
+<span class="g g-Whitespace">    </span><span class="mi">248</span><span class="s2">             return list(self.values())[item]</span>
+
+<span class="ne">KeyError</span>: &#39;t_exptime&#39;
+</pre></div>
+</div>
+</div>
+</div>
+<p>The initial guesses for the parameters (determined by SPOC):</p>
+<div class="cell tag_exe docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">tic_entry</span><span class="o">.</span><span class="n">display</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Plot of the lightcurve:</p>
+<div class="cell tag_exe docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plot_lightcurve</span><span class="p">(</span><span class="n">tic_entry</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="fitting-stellar-parameters">
+<h2>Fitting stellar parameters<a class="headerlink" href="#fitting-stellar-parameters" title="Permalink to this headline">¶</a></h2>
+<p>Now that we have the data, we can define a Bayesian model to fit it.</p>
+<div class="section" id="the-probabilistic-model">
+<h3>The probabilistic model<a class="headerlink" href="#the-probabilistic-model" title="Permalink to this headline">¶</a></h3>
+<p>We use the probabilistic model as described in <a class="reference external" href="https://arxiv.org/pdf/1703.09710.pdf">Foreman-Mackey et al 2017</a> to determine the best parameters to fit the transits present in the lightcurve data.</p>
+<p>More explicitly, the stellar light curve <span class="math notranslate nohighlight">\(l(t; \vec{\theta})\)</span> is modelled with a Gaussian Process (GP).
+A GP consists of a mean function <span class="math notranslate nohighlight">\(\mu(t;\vec{\theta})\)</span> and a kernel function <span class="math notranslate nohighlight">\(k_\alpha(t,t';\vec{\theta})\)</span>, where <span class="math notranslate nohighlight">\(\vec{\theta}\)</span> is the vector of parameters descibing the lightcurve and <span class="math notranslate nohighlight">\(t\)</span> is the time during which the lightcurve is under observation</p>
+<p>The 8 parameters describing the lightcurve are
+$<span class="math notranslate nohighlight">\(\vec{\theta} = \{d_i, t0_i, tmax_i, b_i, r_i, f0, u1, u2\},\)</span>$
+where</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(d_i\)</span> transit durations for each planet,</p></li>
+<li><p><span class="math notranslate nohighlight">\(t0_i\)</span> transit phase/epoch for each planet,</p></li>
+<li><p><span class="math notranslate nohighlight">\(tmax_i\)</span> time of the last transit observed by TESS for each planet,</p></li>
+<li><p><span class="math notranslate nohighlight">\(b_i\)</span> impact parameter for each planet,</p></li>
+<li><p><span class="math notranslate nohighlight">\(r_i\)</span> planet radius in stellar radius for each planet,</p></li>
+<li><p><span class="math notranslate nohighlight">\(f0\)</span> baseline relative flux of the light curve from star,</p></li>
+<li><p><span class="math notranslate nohighlight">\(u1\)</span> <span class="math notranslate nohighlight">\(u2\)</span> two parameters describing the limb-darkening profile of star.</p></li>
+</ul>
+<p>Note: if the observed data only records a single transit,
+we swap <span class="math notranslate nohighlight">\(tmax_i\)</span> with <span class="math notranslate nohighlight">\(p_i\)</span> (orbital periods for each planet).</p>
+<p>With this we can write
+$<span class="math notranslate nohighlight">\(l(t;\vec{\theta}) \sim \mathcal{GP} (\mu(t;\vec{\theta}), k_\alpha(t,t';\vec{\theta}))\ .\)</span>$</p>
+<p>Here the mean and kernel functions are:</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(\mu(t;\vec{\theta})\)</span>: a limb-darkened transit light curve (<a class="reference external" href="https://arxiv.org/abs/1308.0009">Kipping 2013</a>)</p></li>
+<li><p><span class="math notranslate nohighlight">\(k_\alpha(t,t';\vec{\theta}))\)</span>: a stochastically-driven, damped harmonic oscillator (<a class="reference external" href="https://celerite2.readthedocs.io/en/latest/api/python/?highlight=SHOTerm#celerite2.terms.SHOTerm">SHOTterm</a>)</p></li>
+</ul>
+<p>Now that we have defined our transit model, we can implement it in python:</p>
+<div class="cell tag_def docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">build_planet_transit_model</span><span class="p">(</span><span class="n">tic_entry</span><span class="p">):</span>
+
+    <span class="c1"># TODO: update model https://github.com/exoplanet-dev/tess.world/blob/main/src/tess_world/templates/template.py#L305</span>
+    <span class="n">t</span> <span class="o">=</span> <span class="n">tic_entry</span><span class="o">.</span><span class="n">lightcurve</span><span class="o">.</span><span class="n">time</span>
+    <span class="n">y</span> <span class="o">=</span> <span class="n">tic_entry</span><span class="o">.</span><span class="n">lightcurve</span><span class="o">.</span><span class="n">flux</span>
+    <span class="n">yerr</span> <span class="o">=</span> <span class="n">tic_entry</span><span class="o">.</span><span class="n">lightcurve</span><span class="o">.</span><span class="n">flux_err</span>
+
+    <span class="n">n</span> <span class="o">=</span> <span class="n">tic_entry</span><span class="o">.</span><span class="n">planet_count</span>
+    <span class="n">t0s</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="n">planet</span><span class="o">.</span><span class="n">t0</span> <span class="k">for</span> <span class="n">planet</span> <span class="ow">in</span> <span class="n">tic_entry</span><span class="o">.</span><span class="n">candidates</span><span class="p">])</span>
+    <span class="n">depths</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="n">planet</span><span class="o">.</span><span class="n">depth</span> <span class="k">for</span> <span class="n">planet</span> <span class="ow">in</span> <span class="n">tic_entry</span><span class="o">.</span><span class="n">candidates</span><span class="p">])</span>
+    <span class="n">periods</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="n">planet</span><span class="o">.</span><span class="n">period</span> <span class="k">for</span> <span class="n">planet</span> <span class="ow">in</span> <span class="n">tic_entry</span><span class="o">.</span><span class="n">candidates</span><span class="p">])</span>
+    <span class="n">tmaxs</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="n">planet</span><span class="o">.</span><span class="n">tmax</span> <span class="k">for</span> <span class="n">planet</span> <span class="ow">in</span> <span class="n">tic_entry</span><span class="o">.</span><span class="n">candidates</span><span class="p">])</span>
+    <span class="n">durations</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="n">planet</span><span class="o">.</span><span class="n">duration</span> <span class="k">for</span> <span class="n">planet</span> <span class="ow">in</span> <span class="n">tic_entry</span><span class="o">.</span><span class="n">candidates</span><span class="p">])</span>
+    <span class="n">max_duration</span><span class="p">,</span> <span class="n">min_duration</span> <span class="o">=</span> <span class="n">durations</span><span class="o">.</span><span class="n">max</span><span class="p">(),</span> <span class="n">durations</span><span class="o">.</span><span class="n">min</span><span class="p">()</span>
+
+    <span class="k">with</span> <span class="n">pm</span><span class="o">.</span><span class="n">Model</span><span class="p">()</span> <span class="k">as</span> <span class="n">my_planet_transit_model</span><span class="p">:</span>
+        <span class="c1">## define planet 𝜃⃗</span>
+        <span class="n">d_priors</span> <span class="o">=</span> <span class="n">pm</span><span class="o">.</span><span class="n">Lognormal</span><span class="p">(</span><span class="s2">&quot;d&quot;</span><span class="p">,</span> <span class="n">mu</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="mf">0.1</span><span class="p">),</span> <span class="n">sigma</span><span class="o">=</span><span class="mf">10.0</span><span class="p">,</span> <span class="n">shape</span><span class="o">=</span><span class="n">n</span><span class="p">)</span>
+        <span class="n">r_priors</span> <span class="o">=</span> <span class="n">pm</span><span class="o">.</span><span class="n">Lognormal</span><span class="p">(</span>
+            <span class="s2">&quot;r&quot;</span><span class="p">,</span> <span class="n">mu</span><span class="o">=</span><span class="mf">0.5</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">depths</span> <span class="o">*</span> <span class="mf">1e-3</span><span class="p">),</span> <span class="n">sd</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span> <span class="n">shape</span><span class="o">=</span><span class="n">n</span>
+        <span class="p">)</span>
+        <span class="n">b_priors</span> <span class="o">=</span> <span class="n">xo</span><span class="o">.</span><span class="n">distributions</span><span class="o">.</span><span class="n">ImpactParameter</span><span class="p">(</span><span class="s2">&quot;b&quot;</span><span class="p">,</span> <span class="n">ror</span><span class="o">=</span><span class="n">r_priors</span><span class="p">,</span> <span class="n">shape</span><span class="o">=</span><span class="n">n</span><span class="p">)</span>
+        <span class="n">planet_priors</span> <span class="o">=</span> <span class="p">[</span><span class="n">r_priors</span><span class="p">,</span> <span class="n">d_priors</span><span class="p">,</span> <span class="n">b_priors</span><span class="p">]</span>
+
+        <span class="c1">## define orbit-timing 𝜃⃗</span>
+        <span class="n">t0_norm</span> <span class="o">=</span> <span class="n">pm</span><span class="o">.</span><span class="n">Bound</span><span class="p">(</span>
+            <span class="n">pm</span><span class="o">.</span><span class="n">Normal</span><span class="p">,</span> <span class="n">lower</span><span class="o">=</span><span class="n">t0s</span> <span class="o">-</span> <span class="n">max_duration</span><span class="p">,</span> <span class="n">upper</span><span class="o">=</span><span class="n">t0s</span> <span class="o">+</span> <span class="n">max_duration</span>
+        <span class="p">)</span>
+        <span class="n">t0_priors</span> <span class="o">=</span> <span class="n">t0_norm</span><span class="p">(</span><span class="s2">&quot;t0&quot;</span><span class="p">,</span> <span class="n">mu</span><span class="o">=</span><span class="n">t0s</span><span class="p">,</span> <span class="n">sd</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span> <span class="n">shape</span><span class="o">=</span><span class="n">n</span><span class="p">)</span>
+
+        <span class="n">p_params</span><span class="p">,</span> <span class="n">p_priors_list</span><span class="p">,</span> <span class="n">tmax_priors_list</span> <span class="o">=</span> <span class="p">[],</span> <span class="p">[],</span> <span class="p">[]</span>
+        <span class="k">for</span> <span class="n">n</span><span class="p">,</span> <span class="n">planet</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">tic_entry</span><span class="o">.</span><span class="n">candidates</span><span class="p">):</span>
+            <span class="k">if</span> <span class="n">planet</span><span class="o">.</span><span class="n">has_data_only_for_single_transit</span><span class="p">:</span>
+                <span class="n">p_prior</span> <span class="o">=</span> <span class="n">pm</span><span class="o">.</span><span class="n">Pareto</span><span class="p">(</span>
+                    <span class="sa">f</span><span class="s2">&quot;p_</span><span class="si">{</span><span class="n">planet</span><span class="o">.</span><span class="n">index</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">,</span>
+                    <span class="n">m</span><span class="o">=</span><span class="n">planet</span><span class="o">.</span><span class="n">period_min</span><span class="p">,</span>
+                    <span class="n">alpha</span><span class="o">=</span><span class="mf">2.0</span> <span class="o">/</span> <span class="mf">3.0</span><span class="p">,</span>
+                    <span class="n">testval</span><span class="o">=</span><span class="n">planet</span><span class="o">.</span><span class="n">period</span><span class="p">,</span>
+                <span class="p">)</span>
+                <span class="n">p_param</span> <span class="o">=</span> <span class="n">p_prior</span>
+                <span class="n">tmax_prior</span> <span class="o">=</span> <span class="n">planet</span><span class="o">.</span><span class="n">t0</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">tmax_norm</span> <span class="o">=</span> <span class="n">pm</span><span class="o">.</span><span class="n">Bound</span><span class="p">(</span>
+                    <span class="n">pm</span><span class="o">.</span><span class="n">Normal</span><span class="p">,</span>
+                    <span class="n">lower</span><span class="o">=</span><span class="n">planet</span><span class="o">.</span><span class="n">tmax</span> <span class="o">-</span> <span class="n">max_duration</span><span class="p">,</span>
+                    <span class="n">upper</span><span class="o">=</span><span class="n">planet</span><span class="o">.</span><span class="n">tmax</span> <span class="o">+</span> <span class="n">max_duration</span><span class="p">,</span>
+                <span class="p">)</span>
+                <span class="n">tmax_prior</span> <span class="o">=</span> <span class="n">tmax_norm</span><span class="p">(</span>
+                    <span class="sa">f</span><span class="s2">&quot;tmax_</span><span class="si">{</span><span class="n">planet</span><span class="o">.</span><span class="n">index</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">,</span>
+                    <span class="n">mu</span><span class="o">=</span><span class="n">planet</span><span class="o">.</span><span class="n">tmax</span><span class="p">,</span>
+                    <span class="n">sigma</span><span class="o">=</span><span class="mf">0.5</span> <span class="o">*</span> <span class="n">planet</span><span class="o">.</span><span class="n">duration</span><span class="p">,</span>
+                    <span class="n">testval</span><span class="o">=</span><span class="n">planet</span><span class="o">.</span><span class="n">tmax</span><span class="p">,</span>
+                <span class="p">)</span>
+                <span class="n">p_prior</span> <span class="o">=</span> <span class="p">(</span><span class="n">tmax_prior</span> <span class="o">-</span> <span class="n">t0_priors</span><span class="p">[</span><span class="n">n</span><span class="p">])</span> <span class="o">/</span> <span class="n">planet</span><span class="o">.</span><span class="n">num_periods</span>
+                <span class="n">p_param</span> <span class="o">=</span> <span class="n">tmax_prior</span>
+
+            <span class="n">p_params</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">p_param</span><span class="p">)</span>  <span class="c1"># the param needed to calculate p</span>
+            <span class="n">p_priors_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">p_prior</span><span class="p">)</span>
+            <span class="n">tmax_priors_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">tmax_prior</span><span class="p">)</span>
+
+        <span class="n">p_priors</span> <span class="o">=</span> <span class="n">pm</span><span class="o">.</span><span class="n">Deterministic</span><span class="p">(</span><span class="s2">&quot;p&quot;</span><span class="p">,</span> <span class="n">tt</span><span class="o">.</span><span class="n">stack</span><span class="p">(</span><span class="n">p_priors_list</span><span class="p">))</span>
+        <span class="n">tmax_priors</span> <span class="o">=</span> <span class="n">pm</span><span class="o">.</span><span class="n">Deterministic</span><span class="p">(</span><span class="s2">&quot;tmax&quot;</span><span class="p">,</span> <span class="n">tt</span><span class="o">.</span><span class="n">stack</span><span class="p">(</span><span class="n">tmax_priors_list</span><span class="p">))</span>
+
+        <span class="c1">## define stellar 𝜃⃗</span>
+        <span class="n">f0_prior</span> <span class="o">=</span> <span class="n">pm</span><span class="o">.</span><span class="n">Normal</span><span class="p">(</span><span class="s2">&quot;f0&quot;</span><span class="p">,</span> <span class="n">mu</span><span class="o">=</span><span class="mf">0.0</span><span class="p">,</span> <span class="n">sd</span><span class="o">=</span><span class="mf">10.0</span><span class="p">)</span>
+        <span class="n">u_prior</span> <span class="o">=</span> <span class="n">xo</span><span class="o">.</span><span class="n">distributions</span><span class="o">.</span><span class="n">QuadLimbDark</span><span class="p">(</span><span class="s2">&quot;u&quot;</span><span class="p">)</span>
+        <span class="n">stellar_priors</span> <span class="o">=</span> <span class="p">[</span><span class="n">f0_prior</span><span class="p">,</span> <span class="n">u_prior</span><span class="p">]</span>
+
+        <span class="c1">## define 𝑘(𝑡,𝑡′;𝜃⃗ )</span>
+        <span class="n">jitter_prior</span> <span class="o">=</span> <span class="n">pm</span><span class="o">.</span><span class="n">InverseGamma</span><span class="p">(</span>
+            <span class="s2">&quot;jitter&quot;</span><span class="p">,</span> <span class="o">**</span><span class="n">pmx</span><span class="o">.</span><span class="n">estimate_inverse_gamma_parameters</span><span class="p">(</span><span class="mf">1.0</span><span class="p">,</span> <span class="mf">5.0</span><span class="p">)</span>
+        <span class="p">)</span>
+        <span class="n">sigma_prior</span> <span class="o">=</span> <span class="n">pm</span><span class="o">.</span><span class="n">InverseGamma</span><span class="p">(</span>
+            <span class="s2">&quot;sigma&quot;</span><span class="p">,</span> <span class="o">**</span><span class="n">pmx</span><span class="o">.</span><span class="n">estimate_inverse_gamma_parameters</span><span class="p">(</span><span class="mf">1.0</span><span class="p">,</span> <span class="mf">5.0</span><span class="p">)</span>
+        <span class="p">)</span>
+        <span class="n">rho_prior</span> <span class="o">=</span> <span class="n">pm</span><span class="o">.</span><span class="n">InverseGamma</span><span class="p">(</span>
+            <span class="s2">&quot;rho&quot;</span><span class="p">,</span> <span class="o">**</span><span class="n">pmx</span><span class="o">.</span><span class="n">estimate_inverse_gamma_parameters</span><span class="p">(</span><span class="mf">0.5</span><span class="p">,</span> <span class="mf">10.0</span><span class="p">)</span>
+        <span class="p">)</span>
+        <span class="n">kernel</span> <span class="o">=</span> <span class="n">terms</span><span class="o">.</span><span class="n">SHOTerm</span><span class="p">(</span><span class="n">sigma</span><span class="o">=</span><span class="n">sigma_prior</span><span class="p">,</span> <span class="n">rho</span><span class="o">=</span><span class="n">rho_prior</span><span class="p">,</span> <span class="n">Q</span><span class="o">=</span><span class="mf">0.3</span><span class="p">)</span>
+        <span class="n">noise_priors</span> <span class="o">=</span> <span class="p">[</span><span class="n">jitter_prior</span><span class="p">,</span> <span class="n">sigma_prior</span><span class="p">,</span> <span class="n">rho_prior</span><span class="p">]</span>
+
+        <span class="c1">## define 𝜇(𝑡;𝜃) (the lightcurve model)</span>
+        <span class="n">orbit</span> <span class="o">=</span> <span class="n">xo</span><span class="o">.</span><span class="n">orbits</span><span class="o">.</span><span class="n">KeplerianOrbit</span><span class="p">(</span>
+            <span class="n">period</span><span class="o">=</span><span class="n">p_priors</span><span class="p">,</span>
+            <span class="n">t0</span><span class="o">=</span><span class="n">t0_priors</span><span class="p">,</span>
+            <span class="n">b</span><span class="o">=</span><span class="n">b_priors</span><span class="p">,</span>
+            <span class="n">duration</span><span class="o">=</span><span class="n">d_priors</span><span class="p">,</span>
+            <span class="n">ror</span><span class="o">=</span><span class="n">r_priors</span><span class="p">,</span>
+        <span class="p">)</span>
+        <span class="n">star</span> <span class="o">=</span> <span class="n">xo</span><span class="o">.</span><span class="n">LimbDarkLightCurve</span><span class="p">(</span><span class="n">u_prior</span><span class="p">)</span>
+        <span class="n">lightcurve_models</span> <span class="o">=</span> <span class="n">star</span><span class="o">.</span><span class="n">get_light_curve</span><span class="p">(</span><span class="n">orbit</span><span class="o">=</span><span class="n">orbit</span><span class="p">,</span> <span class="n">r</span><span class="o">=</span><span class="n">r_priors</span><span class="p">,</span> <span class="n">t</span><span class="o">=</span><span class="n">t</span><span class="p">)</span>
+        <span class="n">lightcurve</span> <span class="o">=</span> <span class="mf">1e3</span> <span class="o">*</span> <span class="n">pm</span><span class="o">.</span><span class="n">math</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">lightcurve_models</span><span class="p">,</span> <span class="n">axis</span><span class="o">=-</span><span class="mi">1</span><span class="p">)</span> <span class="o">+</span> <span class="n">f0_prior</span>
+        <span class="n">lightcurve_models</span> <span class="o">=</span> <span class="n">pm</span><span class="o">.</span><span class="n">Deterministic</span><span class="p">(</span><span class="s2">&quot;lightcurves&quot;</span><span class="p">,</span> <span class="n">lightcurve_models</span><span class="p">)</span>
+        <span class="n">rho_circ</span> <span class="o">=</span> <span class="n">pm</span><span class="o">.</span><span class="n">Deterministic</span><span class="p">(</span><span class="s2">&quot;rho_circ&quot;</span><span class="p">,</span> <span class="n">orbit</span><span class="o">.</span><span class="n">rho_star</span><span class="p">)</span>
+
+        <span class="c1"># Finally the GP observation model</span>
+        <span class="n">residual</span> <span class="o">=</span> <span class="n">y</span> <span class="o">-</span> <span class="n">lightcurve</span>
+        <span class="n">gp</span> <span class="o">=</span> <span class="n">GaussianProcess</span><span class="p">(</span>
+            <span class="n">kernel</span><span class="p">,</span> <span class="n">t</span><span class="o">=</span><span class="n">t</span><span class="p">,</span> <span class="n">diag</span><span class="o">=</span><span class="n">yerr</span> <span class="o">**</span> <span class="mi">2</span> <span class="o">+</span> <span class="n">jitter_prior</span> <span class="o">**</span> <span class="mi">2</span><span class="p">,</span> <span class="n">mean</span><span class="o">=</span><span class="n">lightcurve</span>
+        <span class="p">)</span>
+        <span class="n">gp</span><span class="o">.</span><span class="n">marginal</span><span class="p">(</span><span class="s2">&quot;obs&quot;</span><span class="p">,</span> <span class="n">observed</span><span class="o">=</span><span class="n">y</span><span class="p">)</span>
+
+        <span class="c1"># cache params</span>
+        <span class="n">my_params</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span>
+            <span class="n">planet_params</span><span class="o">=</span><span class="n">planet_priors</span><span class="p">,</span>
+            <span class="n">noise_params</span><span class="o">=</span><span class="n">noise_priors</span><span class="p">,</span>
+            <span class="n">stellar_params</span><span class="o">=</span><span class="n">stellar_priors</span><span class="p">,</span>
+            <span class="n">period_params</span><span class="o">=</span><span class="n">p_params</span><span class="p">,</span>
+        <span class="p">)</span>
+    <span class="k">return</span> <span class="n">my_planet_transit_model</span><span class="p">,</span> <span class="n">my_params</span><span class="p">,</span> <span class="n">gp</span>
+
+
+<span class="k">def</span> <span class="nf">test_model</span><span class="p">(</span><span class="n">model</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Test a point in the model and assure no nans&quot;&quot;&quot;</span>
+    <span class="k">with</span> <span class="n">model</span><span class="p">:</span>
+        <span class="n">test_prob</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">check_test_point</span><span class="p">()</span>
+        <span class="n">test_prob</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;log P(test-point)&quot;</span>
+        <span class="k">assert</span> <span class="ow">not</span> <span class="n">test_prob</span><span class="o">.</span><span class="n">isnull</span><span class="p">()</span><span class="o">.</span><span class="n">values</span><span class="o">.</span><span class="n">any</span><span class="p">(),</span> <span class="n">test_prob</span>
+        <span class="n">test_pt</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">(</span>
+            <span class="p">{</span>
+                <span class="n">k</span><span class="p">:</span> <span class="nb">str</span><span class="p">(</span><span class="nb">round</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">v</span><span class="p">)</span><span class="o">.</span><span class="n">flatten</span><span class="p">()[</span><span class="mi">0</span><span class="p">],</span> <span class="mi">2</span><span class="p">))</span>
+                <span class="k">for</span> <span class="n">k</span><span class="p">,</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">model</span><span class="o">.</span><span class="n">test_point</span><span class="o">.</span><span class="n">items</span><span class="p">()</span>
+            <span class="p">},</span>
+            <span class="n">name</span><span class="o">=</span><span class="s2">&quot;Test Point&quot;</span><span class="p">,</span>
+        <span class="p">)</span>
+        <span class="k">return</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span><span class="n">test_pt</span><span class="p">,</span> <span class="n">test_prob</span><span class="p">],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell tag_exe docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">planet_transit_model</span><span class="p">,</span> <span class="n">params</span><span class="p">,</span> <span class="n">gp</span> <span class="o">=</span> <span class="n">build_planet_transit_model</span><span class="p">(</span><span class="n">tic_entry</span><span class="p">)</span>
+<span class="n">test_model</span><span class="p">(</span><span class="n">planet_transit_model</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>The test point acts as an example of a point in the parameter space.
+We can now optimize the model sampling parameters before initialising the sampler.</p>
+<div class="cell tag_def docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">get_optimized_init_params</span><span class="p">(</span>
+    <span class="n">model</span><span class="p">,</span> <span class="n">planet_params</span><span class="p">,</span> <span class="n">noise_params</span><span class="p">,</span> <span class="n">stellar_params</span><span class="p">,</span> <span class="n">period_params</span>
+<span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Get params with maximimal log prob for sampling starting point&quot;&quot;&quot;</span>
+    <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Optimizing sampling starting point&quot;</span><span class="p">)</span>
+    <span class="k">with</span> <span class="n">model</span><span class="p">:</span>
+        <span class="n">theta</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">test_point</span>
+        <span class="n">kwargs</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="n">start</span><span class="o">=</span><span class="n">theta</span><span class="p">,</span> <span class="n">verbose</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">progress</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+        <span class="n">theta</span> <span class="o">=</span> <span class="n">pmx</span><span class="o">.</span><span class="n">optimize</span><span class="p">(</span><span class="o">**</span><span class="n">kwargs</span><span class="p">,</span> <span class="nb">vars</span><span class="o">=</span><span class="p">[</span><span class="n">noise_params</span><span class="p">[</span><span class="mi">0</span><span class="p">]])</span>
+        <span class="n">theta</span> <span class="o">=</span> <span class="n">pmx</span><span class="o">.</span><span class="n">optimize</span><span class="p">(</span><span class="o">**</span><span class="n">kwargs</span><span class="p">,</span> <span class="nb">vars</span><span class="o">=</span><span class="n">planet_params</span><span class="p">)</span>
+        <span class="n">theta</span> <span class="o">=</span> <span class="n">pmx</span><span class="o">.</span><span class="n">optimize</span><span class="p">(</span><span class="o">**</span><span class="n">kwargs</span><span class="p">,</span> <span class="nb">vars</span><span class="o">=</span><span class="n">noise_params</span><span class="p">)</span>
+        <span class="n">theta</span> <span class="o">=</span> <span class="n">pmx</span><span class="o">.</span><span class="n">optimize</span><span class="p">(</span><span class="o">**</span><span class="n">kwargs</span><span class="p">,</span> <span class="nb">vars</span><span class="o">=</span><span class="n">stellar_params</span><span class="p">)</span>
+        <span class="n">theta</span> <span class="o">=</span> <span class="n">pmx</span><span class="o">.</span><span class="n">optimize</span><span class="p">(</span><span class="o">**</span><span class="n">kwargs</span><span class="p">,</span> <span class="nb">vars</span><span class="o">=</span><span class="n">period_params</span><span class="p">)</span>
+    <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Optimization complete!&quot;</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">theta</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell tag_exe docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">init_params</span> <span class="o">=</span> <span class="n">get_optimized_init_params</span><span class="p">(</span><span class="n">planet_transit_model</span><span class="p">,</span> <span class="o">**</span><span class="n">params</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Now we can plot our initial model:</p>
+<div class="cell tag_exe docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">model_lightcurves</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="n">init_params</span><span class="p">[</span><span class="s2">&quot;lightcurves&quot;</span><span class="p">][:,</span> <span class="n">i</span><span class="p">]</span> <span class="o">*</span> <span class="mf">1e3</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">tic_entry</span><span class="o">.</span><span class="n">planet_count</span><span class="p">)</span>
+<span class="p">]</span>
+<span class="n">plot_lightcurve</span><span class="p">(</span><span class="n">tic_entry</span><span class="p">,</span> <span class="n">model_lightcurves</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell tag_exe docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plot_folded_lightcurve</span><span class="p">(</span><span class="n">tic_entry</span><span class="p">,</span> <span class="n">model_lightcurves</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="sampling">
+<h3>Sampling<a class="headerlink" href="#sampling" title="Permalink to this headline">¶</a></h3>
+<p>With the model and priors defined, we can begin sampling</p>
+<div class="cell tag_def docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">start_model_sampling</span><span class="p">(</span><span class="n">model</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">MultiTrace</span><span class="p">:</span>
+    <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">seed</span><span class="p">(</span><span class="n">TOI_NUMBER</span><span class="p">)</span>
+    <span class="k">with</span> <span class="n">model</span><span class="p">:</span>
+        <span class="n">samples_trace</span> <span class="o">=</span> <span class="n">pmx</span><span class="o">.</span><span class="n">sample</span><span class="p">(</span>
+            <span class="n">tune</span><span class="o">=</span><span class="mi">2000</span><span class="p">,</span> <span class="n">draws</span><span class="o">=</span><span class="mi">2000</span><span class="p">,</span> <span class="n">chains</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">cores</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">start</span><span class="o">=</span><span class="n">init_params</span>
+        <span class="p">)</span>
+        <span class="k">return</span> <span class="n">samples_trace</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell tag_exe docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">trace</span> <span class="o">=</span> <span class="n">start_model_sampling</span><span class="p">(</span><span class="n">planet_transit_model</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Lets save the posteriors and sampling metadata for future use, and take a look at summary statistics</p>
+<div class="cell tag_exe docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">tic_entry</span><span class="o">.</span><span class="n">inference_trace</span> <span class="o">=</span> <span class="n">trace</span>
+<span class="n">tic_entry</span><span class="o">.</span><span class="n">save_inference_trace</span><span class="p">()</span>
+<span class="n">tic_entry</span><span class="o">.</span><span class="n">inference_trace</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="results">
+<h2>Results<a class="headerlink" href="#results" title="Permalink to this headline">¶</a></h2>
+<p>Below are plots of the posterior probability distributuions:</p>
+<div class="cell tag_exe docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plot_posteriors</span><span class="p">(</span><span class="n">tic_entry</span><span class="p">,</span> <span class="n">trace</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>We can also plot the best-fitting light-curve model</p>
+<div class="cell tag_exe docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plot_phase</span><span class="p">(</span><span class="n">tic_entry</span><span class="p">,</span> <span class="n">trace</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="post-processing-eccentricity">
+<h3>Post-processing: Eccentricity<a class="headerlink" href="#post-processing-eccentricity" title="Permalink to this headline">¶</a></h3>
+<p>As discussed above, we fit this model assuming a circular orbit which speeds things up for a few reasons:</p>
+<ol class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">e=0</span></code> allows simpler orbital dynamics which are more computationally efficient (no need to solve Kepler’s equation numerically)</p></li>
+<li><p>There are degeneracies between eccentricity, arrgument of periasteron, impact parameter, and planet radius. Hence by setting <code class="docutils literal notranslate"><span class="pre">e=0</span></code> and using the duration in calculating the planet’s orbit, the sampler can perform better.</p></li>
+</ol>
+<p>To first order, the eccentricity mainly just changes the transit duration.
+This can be thought of as a change in the impled density of the star.
+Therefore, if the transit is fit using stellar density (or duration, in this case) as one of the parameters, it is possible to make an independent measurement of the stellar density, and in turn infer the eccentricity of the orbit as a post-processing step.
+The details of this eccentricity calculation method are described in <a class="reference external" href="https://arxiv.org/abs/1203.5537">Dawson &amp; Johnson (2012)</a>.</p>
+<p>Note: a different stellar density parameter is required for each planet (if there is more than one planet)</p>
+<div class="cell tag_exe docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ecc_samples</span> <span class="o">=</span> <span class="n">calculate_eccentricity_weights</span><span class="p">(</span><span class="n">tic_entry</span><span class="p">,</span> <span class="n">trace</span><span class="p">)</span>
+<span class="n">ecc_samples</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">tic_entry</span><span class="o">.</span><span class="n">outdir</span><span class="p">,</span> <span class="s2">&quot;eccentricity_samples.csv&quot;</span><span class="p">))</span>
+<span class="n">plot_eccentricity_posteriors</span><span class="p">(</span><span class="n">tic_entry</span><span class="p">,</span> <span class="n">ecc_samples</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="citations">
+<h2>Citations<a class="headerlink" href="#citations" title="Permalink to this headline">¶</a></h2>
+<div class="cell tag_exe docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">with</span> <span class="n">planet_transit_model</span><span class="p">:</span>
+    <span class="n">txt</span><span class="p">,</span> <span class="n">bib</span> <span class="o">=</span> <span class="n">xo</span><span class="o">.</span><span class="n">citations</span><span class="o">.</span><span class="n">get_citations_for_model</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">txt</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell tag_exe tag_output_scroll docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">bib</span><span class="o">.</span><span class="n">splitlines</span><span class="p">())</span> <span class="o">+</span> <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">...&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="packages-used">
+<h3>Packages used:<a class="headerlink" href="#packages-used" title="Permalink to this headline">¶</a></h3>
+<div class="cell tag_exe tag_output_scroll docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pkg_resources</span>
+
+<span class="n">dists</span> <span class="o">=</span> <span class="p">[</span><span class="nb">str</span><span class="p">(</span><span class="n">d</span><span class="p">)</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span> <span class="s2">&quot;==&quot;</span><span class="p">)</span> <span class="k">for</span> <span class="n">d</span> <span class="ow">in</span> <span class="n">pkg_resources</span><span class="o">.</span><span class="n">working_set</span><span class="p">]</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">dists</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./content/toi_notebooks"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+            
+
+
+
+<div class='prev-next-bottom'>
+    
+    <div id="prev">
+        <a class="left-prev" href="toi_3528.html" title="previous page">
+            <i class="prevnext-label fas fa-angle-left"></i>
+            <div class="prevnext-info">
+                <p class="prevnext-label">previous</p>
+                <p class="prevnext-title">TESS Atlas fit for TOI 3528</p>
+            </div>
+        </a>
+    </div>
+     <div id="next">
+        <a class="right-next" href="toi_3552.html" title="next page">
+            <div class="prevnext-info">
+                <p class="prevnext-label">next</p>
+                <p class="prevnext-title">TESS Atlas fit for TOI 3552</p>
+            </div>
+            <i class="prevnext-label fas fa-angle-right"></i>
+        </a>
+     </div>
+
+</div>
+        
+        </div>
+    </div>
+    <footer class="footer">
+    <div class="container">
+      <p>
+        
+          By the TESS Atlas community<br/>
+        
+            &copy; Copyright 2021.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+
+  
+  </body>
+</html>

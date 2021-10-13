@@ -1,0 +1,3150 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TOI FITs &#8212; TESS Atlas</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet" />
+  <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.e2363ea40746bee74734a24ffefccd78.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.1c5a1a01449ed65a7b51.js">
+
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="TESS Atlas fit for TOI 1015" href="toi_notebooks/toi_1015.html" />
+    <link rel="prev" title="Acknowledging/Citing TESS Atlas" href="../citation.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../_static/atlas_logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">TESS Atlas</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../index.html">
+   TESS Atlas
+  </a>
+ </li>
+</ul>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="example_loader.html">
+   Example Loader
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../citation.html">
+   Acknowledging/Citing TESS Atlas
+  </a>
+ </li>
+ <li class="toctree-l1 current active has-children">
+  <a class="current reference internal" href="#">
+   TOI FITs
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_notebooks/toi_1015.html">
+     TESS Atlas fit for TOI 1015
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_notebooks/toi_1154.html">
+     TESS Atlas fit for TOI 1154
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_notebooks/toi_1167.html">
+     TESS Atlas fit for TOI 1167
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_notebooks/toi_1194.html">
+     TESS Atlas fit for TOI 1194
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_notebooks/toi_1225.html">
+     TESS Atlas fit for TOI 1225
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_notebooks/toi_1252.html">
+     TESS Atlas fit for TOI 1252
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_notebooks/toi_1275.html">
+     TESS Atlas fit for TOI 1275
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_notebooks/toi_1284.html">
+     TESS Atlas fit for TOI 1284
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_notebooks/toi_1318.html">
+     TESS Atlas fit for TOI 1318
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_notebooks/toi_1335.html">
+     TESS Atlas fit for TOI 1335
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_notebooks/toi_1349.html">
+     TESS Atlas fit for TOI 1349
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_notebooks/toi_1357.html">
+     TESS Atlas fit for TOI 1357
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_notebooks/toi_1361.html">
+     TESS Atlas fit for TOI 1361
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_notebooks/toi_1372.html">
+     TESS Atlas fit for TOI 1372
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_notebooks/toi_1376.html">
+     TESS Atlas fit for TOI 1376
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_notebooks/toi_1459.html">
+     TESS Atlas fit for TOI 1459
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_notebooks/toi_1499.html">
+     TESS Atlas fit for TOI 1499
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_notebooks/toi_1512.html">
+     TESS Atlas fit for TOI 1512
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_notebooks/toi_1617.html">
+     TESS Atlas fit for TOI 1617
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_notebooks/toi_1623.html">
+     TESS Atlas fit for TOI 1623
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_notebooks/toi_1629.html">
+     TESS Atlas fit for TOI 1629
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_notebooks/toi_165.html">
+     TESS Atlas fit for TOI 165
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_notebooks/toi_1675.html">
+     TESS Atlas fit for TOI 1675
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_notebooks/toi_1689.html">
+     TESS Atlas fit for TOI 1689
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_notebooks/toi_1698.html">
+     TESS Atlas fit for TOI 1698
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_notebooks/toi_1738.html">
+     TESS Atlas fit for TOI 1738
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_notebooks/toi_1740.html">
+     TESS Atlas fit for TOI 1740
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_notebooks/toi_1789.html">
+     TESS Atlas fit for TOI 1789
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_notebooks/toi_1798.html">
+     TESS Atlas fit for TOI 1798
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_notebooks/toi_1820.html">
+     TESS Atlas fit for TOI 1820
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_notebooks/toi_1845.html">
+     TESS Atlas fit for TOI 1845
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_notebooks/toi_186.html">
+     TESS Atlas fit for TOI 186
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_notebooks/toi_1879.html">
+     TESS Atlas fit for TOI 1879
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_notebooks/toi_1880.html">
+     TESS Atlas fit for TOI 1880
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_notebooks/toi_1904.html">
+     TESS Atlas fit for TOI 1904
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_notebooks/toi_1909.html">
+     TESS Atlas fit for TOI 1909
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_notebooks/toi_192.html">
+     TESS Atlas fit for TOI 192
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_notebooks/toi_1982.html">
+     TESS Atlas fit for TOI 1982
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_notebooks/toi_1991.html">
+     TESS Atlas fit for TOI 1991
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_notebooks/toi_1995.html">
+     TESS Atlas fit for TOI 1995
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_notebooks/toi_2003.html">
+     TESS Atlas fit for TOI 2003
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_notebooks/toi_2010.html">
+     TESS Atlas fit for TOI 2010
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_notebooks/toi_2064.html">
+     TESS Atlas fit for TOI 2064
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_notebooks/toi_2148.html">
+     TESS Atlas fit for TOI 2148
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_notebooks/toi_2165.html">
+     TESS Atlas fit for TOI 2165
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_notebooks/toi_2184.html">
+     TESS Atlas fit for TOI 2184
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_notebooks/toi_2188.html">
+     TESS Atlas fit for TOI 2188
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_notebooks/toi_2219.html">
+     TESS Atlas fit for TOI 2219
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_notebooks/toi_2247.html">
+     TESS Atlas fit for TOI 2247
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_notebooks/toi_2282.html">
+     TESS Atlas fit for TOI 2282
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_notebooks/toi_2300.html">
+     TESS Atlas fit for TOI 2300
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_notebooks/toi_2314.html">
+     TESS Atlas fit for TOI 2314
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_notebooks/toi_232.html">
+     TESS Atlas fit for TOI 232
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_notebooks/toi_2328.html">
+     TESS Atlas fit for TOI 2328
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_notebooks/toi_2353.html">
+     TESS Atlas fit for TOI 2353
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_notebooks/toi_2363.html">
+     TESS Atlas fit for TOI 2363
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_notebooks/toi_2413.html">
+     TESS Atlas fit for TOI 2413
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_notebooks/toi_2440.html">
+     TESS Atlas fit for TOI 2440
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_notebooks/toi_2467.html">
+     TESS Atlas fit for TOI 2467
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_notebooks/toi_254.html">
+     TESS Atlas fit for TOI 254
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_notebooks/toi_2550.html">
+     TESS Atlas fit for TOI 2550
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_notebooks/toi_2575.html">
+     TESS Atlas fit for TOI 2575
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_notebooks/toi_2578.html">
+     TESS Atlas fit for TOI 2578
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_notebooks/toi_2580.html">
+     TESS Atlas fit for TOI 2580
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_notebooks/toi_2610.html">
+     TESS Atlas fit for TOI 2610
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_notebooks/toi_2628.html">
+     TESS Atlas fit for TOI 2628
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_notebooks/toi_2640.html">
+     TESS Atlas fit for TOI 2640
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_notebooks/toi_2670.html">
+     TESS Atlas fit for TOI 2670
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_notebooks/toi_2798.html">
+     TESS Atlas fit for TOI 2798
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_notebooks/toi_282.html">
+     TESS Atlas fit for TOI 282
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_notebooks/toi_2835.html">
+     TESS Atlas fit for TOI 2835
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_notebooks/toi_2843.html">
+     TESS Atlas fit for TOI 2843
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_notebooks/toi_285.html">
+     TESS Atlas fit for TOI 285
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_notebooks/toi_2862.html">
+     TESS Atlas fit for TOI 2862
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_notebooks/toi_3008.html">
+     TESS Atlas fit for TOI 3008
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_notebooks/toi_3081.html">
+     TESS Atlas fit for TOI 3081
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_notebooks/toi_3112.html">
+     TESS Atlas fit for TOI 3112
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_notebooks/toi_3167.html">
+     TESS Atlas fit for TOI 3167
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_notebooks/toi_3172.html">
+     TESS Atlas fit for TOI 3172
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_notebooks/toi_3183.html">
+     TESS Atlas fit for TOI 3183
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_notebooks/toi_3205.html">
+     TESS Atlas fit for TOI 3205
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_notebooks/toi_3258.html">
+     TESS Atlas fit for TOI 3258
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_notebooks/toi_3264.html">
+     TESS Atlas fit for TOI 3264
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_notebooks/toi_328.html">
+     TESS Atlas fit for TOI 328
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_notebooks/toi_3291.html">
+     TESS Atlas fit for TOI 3291
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_notebooks/toi_3294.html">
+     TESS Atlas fit for TOI 3294
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_notebooks/toi_3346.html">
+     TESS Atlas fit for TOI 3346
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_notebooks/toi_3347.html">
+     TESS Atlas fit for TOI 3347
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_notebooks/toi_3359.html">
+     TESS Atlas fit for TOI 3359
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_notebooks/toi_3390.html">
+     TESS Atlas fit for TOI 3390
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_notebooks/toi_3396.html">
+     TESS Atlas fit for TOI 3396
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_notebooks/toi_3427.html">
+     TESS Atlas fit for TOI 3427
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_notebooks/toi_3434.html">
+     TESS Atlas fit for TOI 3434
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_notebooks/toi_3457.html">
+     TESS Atlas fit for TOI 3457
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_notebooks/toi_346.html">
+     TESS Atlas fit for TOI 346
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_notebooks/toi_3473.html">
+     TESS Atlas fit for TOI 3473
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_notebooks/toi_3481.html">
+     TESS Atlas fit for TOI 3481
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_notebooks/toi_3490.html">
+     TESS Atlas fit for TOI 3490
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_notebooks/toi_3527.html">
+     TESS Atlas fit for TOI 3527
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_notebooks/toi_3528.html">
+     TESS Atlas fit for TOI 3528
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_notebooks/toi_3541.html">
+     TESS Atlas fit for TOI 3541
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_notebooks/toi_3552.html">
+     TESS Atlas fit for TOI 3552
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_notebooks/toi_360.html">
+     TESS Atlas fit for TOI 360
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_notebooks/toi_3609.html">
+     TESS Atlas fit for TOI 3609
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_notebooks/toi_3614.html">
+     TESS Atlas fit for TOI 3614
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_notebooks/toi_3629.html">
+     TESS Atlas fit for TOI 3629
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_notebooks/toi_3643.html">
+     TESS Atlas fit for TOI 3643
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_notebooks/toi_3685.html">
+     TESS Atlas fit for TOI 3685
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_notebooks/toi_3695.html">
+     TESS Atlas fit for TOI 3695
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_notebooks/toi_373.html">
+     TESS Atlas fit for TOI 373
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_notebooks/toi_3773.html">
+     TESS Atlas fit for TOI 3773
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_notebooks/toi_3776.html">
+     TESS Atlas fit for TOI 3776
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_notebooks/toi_3798.html">
+     TESS Atlas fit for TOI 3798
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_notebooks/toi_3820.html">
+     TESS Atlas fit for TOI 3820
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_notebooks/toi_3876.html">
+     TESS Atlas fit for TOI 3876
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_notebooks/toi_3973.html">
+     TESS Atlas fit for TOI 3973
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_notebooks/toi_4017.html">
+     TESS Atlas fit for TOI 4017
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_notebooks/toi_4024.html">
+     TESS Atlas fit for TOI 4024
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_notebooks/toi_4025.html">
+     TESS Atlas fit for TOI 4025
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_notebooks/toi_4048.html">
+     TESS Atlas fit for TOI 4048
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_notebooks/toi_4082.html">
+     TESS Atlas fit for TOI 4082
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_notebooks/toi_4083.html">
+     TESS Atlas fit for TOI 4083
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_notebooks/toi_4115.html">
+     TESS Atlas fit for TOI 4115
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_notebooks/toi_4192.html">
+     TESS Atlas fit for TOI 4192
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_notebooks/toi_421.html">
+     TESS Atlas fit for TOI 421
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_notebooks/toi_4216.html">
+     TESS Atlas fit for TOI 4216
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_notebooks/toi_4239.html">
+     TESS Atlas fit for TOI 4239
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_notebooks/toi_424.html">
+     TESS Atlas fit for TOI 424
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_notebooks/toi_4286.html">
+     TESS Atlas fit for TOI 4286
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_notebooks/toi_4376.html">
+     TESS Atlas fit for TOI 4376
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_notebooks/toi_4397.html">
+     TESS Atlas fit for TOI 4397
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_notebooks/toi_4453.html">
+     TESS Atlas fit for TOI 4453
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_notebooks/toi_470.html">
+     TESS Atlas fit for TOI 470
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_notebooks/toi_490.html">
+     TESS Atlas fit for TOI 490
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_notebooks/toi_514.html">
+     TESS Atlas fit for TOI 514
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_notebooks/toi_526.html">
+     TESS Atlas fit for TOI 526
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_notebooks/toi_541.html">
+     TESS Atlas fit for TOI 541
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_notebooks/toi_648.html">
+     TESS Atlas fit for TOI 648
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_notebooks/toi_650.html">
+     TESS Atlas fit for TOI 650
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_notebooks/toi_660.html">
+     TESS Atlas fit for TOI 660
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_notebooks/toi_731.html">
+     TESS Atlas fit for TOI 731
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_notebooks/toi_751.html">
+     TESS Atlas fit for TOI 751
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_notebooks/toi_827.html">
+     TESS Atlas fit for TOI 827
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_notebooks/toi_833.html">
+     TESS Atlas fit for TOI 833
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_notebooks/toi_850.html">
+     TESS Atlas fit for TOI 850
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_notebooks/toi_881.html">
+     TESS Atlas fit for TOI 881
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_notebooks/toi_892.html">
+     TESS Atlas fit for TOI 892
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_notebooks/toi_919.html">
+     TESS Atlas fit for TOI 919
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_notebooks/toi_950.html">
+     TESS Atlas fit for TOI 950
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="toi_notebooks/toi_995.html">
+     TESS Atlas fit for TOI 995
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/content/toi_fits.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/dfm/tess-atlas"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/dfm/tess-atlas/issues/new?title=Issue%20on%20page%20%2Fcontent/toi_fits.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#toi-1015">
+   <span class="xref std std-doc">
+    TOI 1015
+   </span>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#toi-1154">
+   <span class="xref std std-doc">
+    TOI 1154
+   </span>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#toi-1167">
+   <span class="xref std std-doc">
+    TOI 1167
+   </span>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#toi-1194">
+   <span class="xref std std-doc">
+    TOI 1194
+   </span>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#toi-1225">
+   <span class="xref std std-doc">
+    TOI 1225
+   </span>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#toi-1252">
+   <span class="xref std std-doc">
+    TOI 1252
+   </span>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#toi-1275">
+   <span class="xref std std-doc">
+    TOI 1275
+   </span>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#toi-1284">
+   <span class="xref std std-doc">
+    TOI 1284
+   </span>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#toi-1318">
+   <span class="xref std std-doc">
+    TOI 1318
+   </span>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#toi-1335">
+   <span class="xref std std-doc">
+    TOI 1335
+   </span>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#toi-1349">
+   <span class="xref std std-doc">
+    TOI 1349
+   </span>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#toi-1357">
+   <span class="xref std std-doc">
+    TOI 1357
+   </span>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#toi-1361">
+   <span class="xref std std-doc">
+    TOI 1361
+   </span>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#toi-1372">
+   <span class="xref std std-doc">
+    TOI 1372
+   </span>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#toi-1376">
+   <span class="xref std std-doc">
+    TOI 1376
+   </span>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#toi-1459">
+   <span class="xref std std-doc">
+    TOI 1459
+   </span>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#toi-1499">
+   <span class="xref std std-doc">
+    TOI 1499
+   </span>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#toi-1512">
+   <span class="xref std std-doc">
+    TOI 1512
+   </span>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#toi-1617">
+   <span class="xref std std-doc">
+    TOI 1617
+   </span>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#toi-1623">
+   <span class="xref std std-doc">
+    TOI 1623
+   </span>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#toi-1629">
+   <span class="xref std std-doc">
+    TOI 1629
+   </span>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#toi-165">
+   <span class="xref std std-doc">
+    TOI 165
+   </span>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#toi-1675">
+   <span class="xref std std-doc">
+    TOI 1675
+   </span>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#toi-1689">
+   <span class="xref std std-doc">
+    TOI 1689
+   </span>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#toi-1698">
+   <span class="xref std std-doc">
+    TOI 1698
+   </span>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#toi-1738">
+   <span class="xref std std-doc">
+    TOI 1738
+   </span>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#toi-1740">
+   <span class="xref std std-doc">
+    TOI 1740
+   </span>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#toi-1789">
+   <span class="xref std std-doc">
+    TOI 1789
+   </span>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#toi-1798">
+   <span class="xref std std-doc">
+    TOI 1798
+   </span>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#toi-1820">
+   <span class="xref std std-doc">
+    TOI 1820
+   </span>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#toi-1845">
+   <span class="xref std std-doc">
+    TOI 1845
+   </span>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#toi-186">
+   <span class="xref std std-doc">
+    TOI 186
+   </span>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#toi-1879">
+   <span class="xref std std-doc">
+    TOI 1879
+   </span>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#toi-1880">
+   <span class="xref std std-doc">
+    TOI 1880
+   </span>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#toi-1904">
+   <span class="xref std std-doc">
+    TOI 1904
+   </span>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#toi-1909">
+   <span class="xref std std-doc">
+    TOI 1909
+   </span>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#toi-192">
+   <span class="xref std std-doc">
+    TOI 192
+   </span>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#toi-1982">
+   <span class="xref std std-doc">
+    TOI 1982
+   </span>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#toi-1991">
+   <span class="xref std std-doc">
+    TOI 1991
+   </span>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#toi-1995">
+   <span class="xref std std-doc">
+    TOI 1995
+   </span>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#toi-2003">
+   <span class="xref std std-doc">
+    TOI 2003
+   </span>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#toi-2010">
+   <span class="xref std std-doc">
+    TOI 2010
+   </span>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#toi-2064">
+   <span class="xref std std-doc">
+    TOI 2064
+   </span>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#toi-2148">
+   <span class="xref std std-doc">
+    TOI 2148
+   </span>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#toi-2165">
+   <span class="xref std std-doc">
+    TOI 2165
+   </span>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#toi-2184">
+   <span class="xref std std-doc">
+    TOI 2184
+   </span>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#toi-2188">
+   <span class="xref std std-doc">
+    TOI 2188
+   </span>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#toi-2219">
+   <span class="xref std std-doc">
+    TOI 2219
+   </span>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#toi-2247">
+   <span class="xref std std-doc">
+    TOI 2247
+   </span>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#toi-2282">
+   <span class="xref std std-doc">
+    TOI 2282
+   </span>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#toi-2300">
+   <span class="xref std std-doc">
+    TOI 2300
+   </span>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#toi-2314">
+   <span class="xref std std-doc">
+    TOI 2314
+   </span>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#toi-232">
+   <span class="xref std std-doc">
+    TOI 232
+   </span>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#toi-2328">
+   <span class="xref std std-doc">
+    TOI 2328
+   </span>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#toi-2353">
+   <span class="xref std std-doc">
+    TOI 2353
+   </span>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#toi-2363">
+   <span class="xref std std-doc">
+    TOI 2363
+   </span>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#toi-2413">
+   <span class="xref std std-doc">
+    TOI 2413
+   </span>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#toi-2440">
+   <span class="xref std std-doc">
+    TOI 2440
+   </span>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#toi-2467">
+   <span class="xref std std-doc">
+    TOI 2467
+   </span>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#toi-254">
+   <span class="xref std std-doc">
+    TOI 254
+   </span>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#toi-2550">
+   <span class="xref std std-doc">
+    TOI 2550
+   </span>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#toi-2575">
+   <span class="xref std std-doc">
+    TOI 2575
+   </span>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#toi-2578">
+   <span class="xref std std-doc">
+    TOI 2578
+   </span>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#toi-2580">
+   <span class="xref std std-doc">
+    TOI 2580
+   </span>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#toi-2610">
+   <span class="xref std std-doc">
+    TOI 2610
+   </span>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#toi-2628">
+   <span class="xref std std-doc">
+    TOI 2628
+   </span>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#toi-2640">
+   <span class="xref std std-doc">
+    TOI 2640
+   </span>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#toi-2670">
+   <span class="xref std std-doc">
+    TOI 2670
+   </span>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#toi-2798">
+   <span class="xref std std-doc">
+    TOI 2798
+   </span>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#toi-282">
+   <span class="xref std std-doc">
+    TOI 282
+   </span>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#toi-2835">
+   <span class="xref std std-doc">
+    TOI 2835
+   </span>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#toi-2843">
+   <span class="xref std std-doc">
+    TOI 2843
+   </span>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#toi-285">
+   <span class="xref std std-doc">
+    TOI 285
+   </span>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#toi-2862">
+   <span class="xref std std-doc">
+    TOI 2862
+   </span>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#toi-3008">
+   <span class="xref std std-doc">
+    TOI 3008
+   </span>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#toi-3081">
+   <span class="xref std std-doc">
+    TOI 3081
+   </span>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#toi-3112">
+   <span class="xref std std-doc">
+    TOI 3112
+   </span>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#toi-3167">
+   <span class="xref std std-doc">
+    TOI 3167
+   </span>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#toi-3172">
+   <span class="xref std std-doc">
+    TOI 3172
+   </span>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#toi-3183">
+   <span class="xref std std-doc">
+    TOI 3183
+   </span>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#toi-3205">
+   <span class="xref std std-doc">
+    TOI 3205
+   </span>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#toi-3258">
+   <span class="xref std std-doc">
+    TOI 3258
+   </span>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#toi-3264">
+   <span class="xref std std-doc">
+    TOI 3264
+   </span>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#toi-328">
+   <span class="xref std std-doc">
+    TOI 328
+   </span>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#toi-3291">
+   <span class="xref std std-doc">
+    TOI 3291
+   </span>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#toi-3294">
+   <span class="xref std std-doc">
+    TOI 3294
+   </span>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#toi-3346">
+   <span class="xref std std-doc">
+    TOI 3346
+   </span>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#toi-3347">
+   <span class="xref std std-doc">
+    TOI 3347
+   </span>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#toi-3359">
+   <span class="xref std std-doc">
+    TOI 3359
+   </span>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#toi-3390">
+   <span class="xref std std-doc">
+    TOI 3390
+   </span>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#toi-3396">
+   <span class="xref std std-doc">
+    TOI 3396
+   </span>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#toi-3427">
+   <span class="xref std std-doc">
+    TOI 3427
+   </span>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#toi-3434">
+   <span class="xref std std-doc">
+    TOI 3434
+   </span>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#toi-3457">
+   <span class="xref std std-doc">
+    TOI 3457
+   </span>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#toi-346">
+   <span class="xref std std-doc">
+    TOI 346
+   </span>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#toi-3473">
+   <span class="xref std std-doc">
+    TOI 3473
+   </span>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#toi-3481">
+   <span class="xref std std-doc">
+    TOI 3481
+   </span>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#toi-3490">
+   <span class="xref std std-doc">
+    TOI 3490
+   </span>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#toi-3527">
+   <span class="xref std std-doc">
+    TOI 3527
+   </span>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#toi-3528">
+   <span class="xref std std-doc">
+    TOI 3528
+   </span>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#toi-3541">
+   <span class="xref std std-doc">
+    TOI 3541
+   </span>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#toi-3552">
+   <span class="xref std std-doc">
+    TOI 3552
+   </span>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#toi-360">
+   <span class="xref std std-doc">
+    TOI 360
+   </span>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#toi-3609">
+   <span class="xref std std-doc">
+    TOI 3609
+   </span>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#toi-3614">
+   <span class="xref std std-doc">
+    TOI 3614
+   </span>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#toi-3629">
+   <span class="xref std std-doc">
+    TOI 3629
+   </span>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#toi-3643">
+   <span class="xref std std-doc">
+    TOI 3643
+   </span>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#toi-3685">
+   <span class="xref std std-doc">
+    TOI 3685
+   </span>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#toi-3695">
+   <span class="xref std std-doc">
+    TOI 3695
+   </span>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#toi-373">
+   <span class="xref std std-doc">
+    TOI 373
+   </span>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#toi-3773">
+   <span class="xref std std-doc">
+    TOI 3773
+   </span>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#toi-3776">
+   <span class="xref std std-doc">
+    TOI 3776
+   </span>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#toi-3798">
+   <span class="xref std std-doc">
+    TOI 3798
+   </span>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#toi-3820">
+   <span class="xref std std-doc">
+    TOI 3820
+   </span>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#toi-3876">
+   <span class="xref std std-doc">
+    TOI 3876
+   </span>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#toi-3973">
+   <span class="xref std std-doc">
+    TOI 3973
+   </span>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#toi-4017">
+   <span class="xref std std-doc">
+    TOI 4017
+   </span>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#toi-4024">
+   <span class="xref std std-doc">
+    TOI 4024
+   </span>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#toi-4025">
+   <span class="xref std std-doc">
+    TOI 4025
+   </span>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#toi-4048">
+   <span class="xref std std-doc">
+    TOI 4048
+   </span>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#toi-4082">
+   <span class="xref std std-doc">
+    TOI 4082
+   </span>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#toi-4083">
+   <span class="xref std std-doc">
+    TOI 4083
+   </span>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#toi-4115">
+   <span class="xref std std-doc">
+    TOI 4115
+   </span>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#toi-4192">
+   <span class="xref std std-doc">
+    TOI 4192
+   </span>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#toi-421">
+   <span class="xref std std-doc">
+    TOI 421
+   </span>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#toi-4216">
+   <span class="xref std std-doc">
+    TOI 4216
+   </span>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#toi-4239">
+   <span class="xref std std-doc">
+    TOI 4239
+   </span>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#toi-424">
+   <span class="xref std std-doc">
+    TOI 424
+   </span>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#toi-4286">
+   <span class="xref std std-doc">
+    TOI 4286
+   </span>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#toi-4376">
+   <span class="xref std std-doc">
+    TOI 4376
+   </span>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#toi-4397">
+   <span class="xref std std-doc">
+    TOI 4397
+   </span>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#toi-4453">
+   <span class="xref std std-doc">
+    TOI 4453
+   </span>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#toi-470">
+   <span class="xref std std-doc">
+    TOI 470
+   </span>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#toi-490">
+   <span class="xref std std-doc">
+    TOI 490
+   </span>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#toi-514">
+   <span class="xref std std-doc">
+    TOI 514
+   </span>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#toi-526">
+   <span class="xref std std-doc">
+    TOI 526
+   </span>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#toi-541">
+   <span class="xref std std-doc">
+    TOI 541
+   </span>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#toi-648">
+   <span class="xref std std-doc">
+    TOI 648
+   </span>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#toi-650">
+   <span class="xref std std-doc">
+    TOI 650
+   </span>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#toi-660">
+   <span class="xref std std-doc">
+    TOI 660
+   </span>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#toi-731">
+   <span class="xref std std-doc">
+    TOI 731
+   </span>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#toi-751">
+   <span class="xref std std-doc">
+    TOI 751
+   </span>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#toi-827">
+   <span class="xref std std-doc">
+    TOI 827
+   </span>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#toi-833">
+   <span class="xref std std-doc">
+    TOI 833
+   </span>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#toi-850">
+   <span class="xref std std-doc">
+    TOI 850
+   </span>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#toi-881">
+   <span class="xref std std-doc">
+    TOI 881
+   </span>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#toi-892">
+   <span class="xref std std-doc">
+    TOI 892
+   </span>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#toi-919">
+   <span class="xref std std-doc">
+    TOI 919
+   </span>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#toi-950">
+   <span class="xref std std-doc">
+    TOI 950
+   </span>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#toi-995">
+   <span class="xref std std-doc">
+    TOI 995
+   </span>
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="toi-fits">
+<h1>TOI FITs<a class="headerlink" href="#toi-fits" title="Permalink to this headline">¶</a></h1>
+<p>Each TOI’s analysis has its own page.
+Here we have a summary of all the TOI Fits</p>
+<hr class="docutils" />
+<div class="section" id="toi-1015">
+<h2><a class="reference internal" href="toi_notebooks/toi_1015.html"><span class="doc">TOI 1015</span></a><a class="headerlink" href="#toi-1015" title="Permalink to this headline">¶</a></h2>
+<img alt="../_images/phase_plot_1.png" id="id1" src="../_images/phase_plot_1.png" />
+</div>
+<hr class="docutils" />
+<div class="section" id="toi-1154">
+<h2><a class="reference internal" href="toi_notebooks/toi_1154.html"><span class="doc">TOI 1154</span></a><a class="headerlink" href="#toi-1154" title="Permalink to this headline">¶</a></h2>
+<div class="admonition error">
+<p class="admonition-title">Error</p>
+<p>Phase plot generation failed. There may be underlying errors.</p>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="toi-1167">
+<h2><a class="reference internal" href="toi_notebooks/toi_1167.html"><span class="doc">TOI 1167</span></a><a class="headerlink" href="#toi-1167" title="Permalink to this headline">¶</a></h2>
+<img alt="../_images/phase_plot_11.png" id="id2" src="../_images/phase_plot_11.png" />
+</div>
+<hr class="docutils" />
+<div class="section" id="toi-1194">
+<h2><a class="reference internal" href="toi_notebooks/toi_1194.html"><span class="doc">TOI 1194</span></a><a class="headerlink" href="#toi-1194" title="Permalink to this headline">¶</a></h2>
+<img alt="../_images/phase_plot_12.png" id="id3" src="../_images/phase_plot_12.png" />
+</div>
+<hr class="docutils" />
+<div class="section" id="toi-1225">
+<h2><a class="reference internal" href="toi_notebooks/toi_1225.html"><span class="doc">TOI 1225</span></a><a class="headerlink" href="#toi-1225" title="Permalink to this headline">¶</a></h2>
+<img alt="../_images/phase_plot_13.png" id="id4" src="../_images/phase_plot_13.png" />
+<img alt="../_images/phase_plot_2.png" id="id5" src="../_images/phase_plot_2.png" />
+</div>
+<hr class="docutils" />
+<div class="section" id="toi-1252">
+<h2><a class="reference internal" href="toi_notebooks/toi_1252.html"><span class="doc">TOI 1252</span></a><a class="headerlink" href="#toi-1252" title="Permalink to this headline">¶</a></h2>
+<div class="admonition error">
+<p class="admonition-title">Error</p>
+<p>Phase plot generation failed. There may be underlying errors.</p>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="toi-1275">
+<h2><a class="reference internal" href="toi_notebooks/toi_1275.html"><span class="doc">TOI 1275</span></a><a class="headerlink" href="#toi-1275" title="Permalink to this headline">¶</a></h2>
+<img alt="../_images/phase_plot_14.png" id="id6" src="../_images/phase_plot_14.png" />
+</div>
+<hr class="docutils" />
+<div class="section" id="toi-1284">
+<h2><a class="reference internal" href="toi_notebooks/toi_1284.html"><span class="doc">TOI 1284</span></a><a class="headerlink" href="#toi-1284" title="Permalink to this headline">¶</a></h2>
+<img alt="../_images/phase_plot_15.png" id="id7" src="../_images/phase_plot_15.png" />
+</div>
+<hr class="docutils" />
+<div class="section" id="toi-1318">
+<h2><a class="reference internal" href="toi_notebooks/toi_1318.html"><span class="doc">TOI 1318</span></a><a class="headerlink" href="#toi-1318" title="Permalink to this headline">¶</a></h2>
+<div class="admonition error">
+<p class="admonition-title">Error</p>
+<p>Phase plot generation failed. There may be underlying errors.</p>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="toi-1335">
+<h2><a class="reference internal" href="toi_notebooks/toi_1335.html"><span class="doc">TOI 1335</span></a><a class="headerlink" href="#toi-1335" title="Permalink to this headline">¶</a></h2>
+<div class="admonition error">
+<p class="admonition-title">Error</p>
+<p>Phase plot generation failed. There may be underlying errors.</p>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="toi-1349">
+<h2><a class="reference internal" href="toi_notebooks/toi_1349.html"><span class="doc">TOI 1349</span></a><a class="headerlink" href="#toi-1349" title="Permalink to this headline">¶</a></h2>
+<div class="admonition error">
+<p class="admonition-title">Error</p>
+<p>Phase plot generation failed. There may be underlying errors.</p>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="toi-1357">
+<h2><a class="reference internal" href="toi_notebooks/toi_1357.html"><span class="doc">TOI 1357</span></a><a class="headerlink" href="#toi-1357" title="Permalink to this headline">¶</a></h2>
+<div class="admonition error">
+<p class="admonition-title">Error</p>
+<p>Phase plot generation failed. There may be underlying errors.</p>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="toi-1361">
+<h2><a class="reference internal" href="toi_notebooks/toi_1361.html"><span class="doc">TOI 1361</span></a><a class="headerlink" href="#toi-1361" title="Permalink to this headline">¶</a></h2>
+<div class="admonition error">
+<p class="admonition-title">Error</p>
+<p>Phase plot generation failed. There may be underlying errors.</p>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="toi-1372">
+<h2><a class="reference internal" href="toi_notebooks/toi_1372.html"><span class="doc">TOI 1372</span></a><a class="headerlink" href="#toi-1372" title="Permalink to this headline">¶</a></h2>
+<div class="admonition error">
+<p class="admonition-title">Error</p>
+<p>Phase plot generation failed. There may be underlying errors.</p>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="toi-1376">
+<h2><a class="reference internal" href="toi_notebooks/toi_1376.html"><span class="doc">TOI 1376</span></a><a class="headerlink" href="#toi-1376" title="Permalink to this headline">¶</a></h2>
+<div class="admonition error">
+<p class="admonition-title">Error</p>
+<p>Phase plot generation failed. There may be underlying errors.</p>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="toi-1459">
+<h2><a class="reference internal" href="toi_notebooks/toi_1459.html"><span class="doc">TOI 1459</span></a><a class="headerlink" href="#toi-1459" title="Permalink to this headline">¶</a></h2>
+<div class="admonition error">
+<p class="admonition-title">Error</p>
+<p>Phase plot generation failed. There may be underlying errors.</p>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="toi-1499">
+<h2><a class="reference internal" href="toi_notebooks/toi_1499.html"><span class="doc">TOI 1499</span></a><a class="headerlink" href="#toi-1499" title="Permalink to this headline">¶</a></h2>
+<div class="admonition error">
+<p class="admonition-title">Error</p>
+<p>Phase plot generation failed. There may be underlying errors.</p>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="toi-1512">
+<h2><a class="reference internal" href="toi_notebooks/toi_1512.html"><span class="doc">TOI 1512</span></a><a class="headerlink" href="#toi-1512" title="Permalink to this headline">¶</a></h2>
+<div class="admonition error">
+<p class="admonition-title">Error</p>
+<p>Phase plot generation failed. There may be underlying errors.</p>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="toi-1617">
+<h2><a class="reference internal" href="toi_notebooks/toi_1617.html"><span class="doc">TOI 1617</span></a><a class="headerlink" href="#toi-1617" title="Permalink to this headline">¶</a></h2>
+<div class="admonition error">
+<p class="admonition-title">Error</p>
+<p>Phase plot generation failed. There may be underlying errors.</p>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="toi-1623">
+<h2><a class="reference internal" href="toi_notebooks/toi_1623.html"><span class="doc">TOI 1623</span></a><a class="headerlink" href="#toi-1623" title="Permalink to this headline">¶</a></h2>
+<div class="admonition error">
+<p class="admonition-title">Error</p>
+<p>Phase plot generation failed. There may be underlying errors.</p>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="toi-1629">
+<h2><a class="reference internal" href="toi_notebooks/toi_1629.html"><span class="doc">TOI 1629</span></a><a class="headerlink" href="#toi-1629" title="Permalink to this headline">¶</a></h2>
+<img alt="../_images/phase_plot_16.png" id="id8" src="../_images/phase_plot_16.png" />
+</div>
+<hr class="docutils" />
+<div class="section" id="toi-165">
+<h2><a class="reference internal" href="toi_notebooks/toi_165.html"><span class="doc">TOI 165</span></a><a class="headerlink" href="#toi-165" title="Permalink to this headline">¶</a></h2>
+<img alt="../_images/phase_plot_17.png" id="id9" src="../_images/phase_plot_17.png" />
+</div>
+<hr class="docutils" />
+<div class="section" id="toi-1675">
+<h2><a class="reference internal" href="toi_notebooks/toi_1675.html"><span class="doc">TOI 1675</span></a><a class="headerlink" href="#toi-1675" title="Permalink to this headline">¶</a></h2>
+<div class="admonition error">
+<p class="admonition-title">Error</p>
+<p>Phase plot generation failed. There may be underlying errors.</p>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="toi-1689">
+<h2><a class="reference internal" href="toi_notebooks/toi_1689.html"><span class="doc">TOI 1689</span></a><a class="headerlink" href="#toi-1689" title="Permalink to this headline">¶</a></h2>
+<div class="admonition error">
+<p class="admonition-title">Error</p>
+<p>Phase plot generation failed. There may be underlying errors.</p>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="toi-1698">
+<h2><a class="reference internal" href="toi_notebooks/toi_1698.html"><span class="doc">TOI 1698</span></a><a class="headerlink" href="#toi-1698" title="Permalink to this headline">¶</a></h2>
+<div class="admonition error">
+<p class="admonition-title">Error</p>
+<p>Phase plot generation failed. There may be underlying errors.</p>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="toi-1738">
+<h2><a class="reference internal" href="toi_notebooks/toi_1738.html"><span class="doc">TOI 1738</span></a><a class="headerlink" href="#toi-1738" title="Permalink to this headline">¶</a></h2>
+<img alt="../_images/phase_plot_18.png" id="id10" src="../_images/phase_plot_18.png" />
+</div>
+<hr class="docutils" />
+<div class="section" id="toi-1740">
+<h2><a class="reference internal" href="toi_notebooks/toi_1740.html"><span class="doc">TOI 1740</span></a><a class="headerlink" href="#toi-1740" title="Permalink to this headline">¶</a></h2>
+<div class="admonition error">
+<p class="admonition-title">Error</p>
+<p>Phase plot generation failed. There may be underlying errors.</p>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="toi-1789">
+<h2><a class="reference internal" href="toi_notebooks/toi_1789.html"><span class="doc">TOI 1789</span></a><a class="headerlink" href="#toi-1789" title="Permalink to this headline">¶</a></h2>
+<div class="admonition error">
+<p class="admonition-title">Error</p>
+<p>Phase plot generation failed. There may be underlying errors.</p>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="toi-1798">
+<h2><a class="reference internal" href="toi_notebooks/toi_1798.html"><span class="doc">TOI 1798</span></a><a class="headerlink" href="#toi-1798" title="Permalink to this headline">¶</a></h2>
+<img alt="../_images/phase_plot_19.png" id="id11" src="../_images/phase_plot_19.png" />
+<img alt="../_images/phase_plot_21.png" id="id12" src="../_images/phase_plot_21.png" />
+</div>
+<hr class="docutils" />
+<div class="section" id="toi-1820">
+<h2><a class="reference internal" href="toi_notebooks/toi_1820.html"><span class="doc">TOI 1820</span></a><a class="headerlink" href="#toi-1820" title="Permalink to this headline">¶</a></h2>
+<div class="admonition error">
+<p class="admonition-title">Error</p>
+<p>Phase plot generation failed. There may be underlying errors.</p>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="toi-1845">
+<h2><a class="reference internal" href="toi_notebooks/toi_1845.html"><span class="doc">TOI 1845</span></a><a class="headerlink" href="#toi-1845" title="Permalink to this headline">¶</a></h2>
+<img alt="../_images/phase_plot_110.png" id="id13" src="../_images/phase_plot_110.png" />
+</div>
+<hr class="docutils" />
+<div class="section" id="toi-186">
+<h2><a class="reference internal" href="toi_notebooks/toi_186.html"><span class="doc">TOI 186</span></a><a class="headerlink" href="#toi-186" title="Permalink to this headline">¶</a></h2>
+<div class="admonition error">
+<p class="admonition-title">Error</p>
+<p>Phase plot generation failed. There may be underlying errors.</p>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="toi-1879">
+<h2><a class="reference internal" href="toi_notebooks/toi_1879.html"><span class="doc">TOI 1879</span></a><a class="headerlink" href="#toi-1879" title="Permalink to this headline">¶</a></h2>
+<img alt="../_images/phase_plot_111.png" id="id14" src="../_images/phase_plot_111.png" />
+</div>
+<hr class="docutils" />
+<div class="section" id="toi-1880">
+<h2><a class="reference internal" href="toi_notebooks/toi_1880.html"><span class="doc">TOI 1880</span></a><a class="headerlink" href="#toi-1880" title="Permalink to this headline">¶</a></h2>
+<img alt="../_images/phase_plot_112.png" id="id15" src="../_images/phase_plot_112.png" />
+</div>
+<hr class="docutils" />
+<div class="section" id="toi-1904">
+<h2><a class="reference internal" href="toi_notebooks/toi_1904.html"><span class="doc">TOI 1904</span></a><a class="headerlink" href="#toi-1904" title="Permalink to this headline">¶</a></h2>
+<img alt="../_images/phase_plot_113.png" id="id16" src="../_images/phase_plot_113.png" />
+</div>
+<hr class="docutils" />
+<div class="section" id="toi-1909">
+<h2><a class="reference internal" href="toi_notebooks/toi_1909.html"><span class="doc">TOI 1909</span></a><a class="headerlink" href="#toi-1909" title="Permalink to this headline">¶</a></h2>
+<div class="admonition error">
+<p class="admonition-title">Error</p>
+<p>Phase plot generation failed. There may be underlying errors.</p>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="toi-192">
+<h2><a class="reference internal" href="toi_notebooks/toi_192.html"><span class="doc">TOI 192</span></a><a class="headerlink" href="#toi-192" title="Permalink to this headline">¶</a></h2>
+<img alt="../_images/phase_plot_114.png" id="id17" src="../_images/phase_plot_114.png" />
+</div>
+<hr class="docutils" />
+<div class="section" id="toi-1982">
+<h2><a class="reference internal" href="toi_notebooks/toi_1982.html"><span class="doc">TOI 1982</span></a><a class="headerlink" href="#toi-1982" title="Permalink to this headline">¶</a></h2>
+<img alt="../_images/phase_plot_115.png" id="id18" src="../_images/phase_plot_115.png" />
+</div>
+<hr class="docutils" />
+<div class="section" id="toi-1991">
+<h2><a class="reference internal" href="toi_notebooks/toi_1991.html"><span class="doc">TOI 1991</span></a><a class="headerlink" href="#toi-1991" title="Permalink to this headline">¶</a></h2>
+<img alt="../_images/phase_plot_116.png" id="id19" src="../_images/phase_plot_116.png" />
+</div>
+<hr class="docutils" />
+<div class="section" id="toi-1995">
+<h2><a class="reference internal" href="toi_notebooks/toi_1995.html"><span class="doc">TOI 1995</span></a><a class="headerlink" href="#toi-1995" title="Permalink to this headline">¶</a></h2>
+<div class="admonition error">
+<p class="admonition-title">Error</p>
+<p>Phase plot generation failed. There may be underlying errors.</p>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="toi-2003">
+<h2><a class="reference internal" href="toi_notebooks/toi_2003.html"><span class="doc">TOI 2003</span></a><a class="headerlink" href="#toi-2003" title="Permalink to this headline">¶</a></h2>
+<div class="admonition error">
+<p class="admonition-title">Error</p>
+<p>Phase plot generation failed. There may be underlying errors.</p>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="toi-2010">
+<h2><a class="reference internal" href="toi_notebooks/toi_2010.html"><span class="doc">TOI 2010</span></a><a class="headerlink" href="#toi-2010" title="Permalink to this headline">¶</a></h2>
+<div class="admonition error">
+<p class="admonition-title">Error</p>
+<p>Phase plot generation failed. There may be underlying errors.</p>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="toi-2064">
+<h2><a class="reference internal" href="toi_notebooks/toi_2064.html"><span class="doc">TOI 2064</span></a><a class="headerlink" href="#toi-2064" title="Permalink to this headline">¶</a></h2>
+<div class="admonition error">
+<p class="admonition-title">Error</p>
+<p>Phase plot generation failed. There may be underlying errors.</p>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="toi-2148">
+<h2><a class="reference internal" href="toi_notebooks/toi_2148.html"><span class="doc">TOI 2148</span></a><a class="headerlink" href="#toi-2148" title="Permalink to this headline">¶</a></h2>
+<img alt="../_images/phase_plot_117.png" id="id20" src="../_images/phase_plot_117.png" />
+</div>
+<hr class="docutils" />
+<div class="section" id="toi-2165">
+<h2><a class="reference internal" href="toi_notebooks/toi_2165.html"><span class="doc">TOI 2165</span></a><a class="headerlink" href="#toi-2165" title="Permalink to this headline">¶</a></h2>
+<img alt="../_images/phase_plot_118.png" id="id21" src="../_images/phase_plot_118.png" />
+</div>
+<hr class="docutils" />
+<div class="section" id="toi-2184">
+<h2><a class="reference internal" href="toi_notebooks/toi_2184.html"><span class="doc">TOI 2184</span></a><a class="headerlink" href="#toi-2184" title="Permalink to this headline">¶</a></h2>
+<img alt="../_images/phase_plot_119.png" id="id22" src="../_images/phase_plot_119.png" />
+</div>
+<hr class="docutils" />
+<div class="section" id="toi-2188">
+<h2><a class="reference internal" href="toi_notebooks/toi_2188.html"><span class="doc">TOI 2188</span></a><a class="headerlink" href="#toi-2188" title="Permalink to this headline">¶</a></h2>
+<img alt="../_images/phase_plot_120.png" id="id23" src="../_images/phase_plot_120.png" />
+</div>
+<hr class="docutils" />
+<div class="section" id="toi-2219">
+<h2><a class="reference internal" href="toi_notebooks/toi_2219.html"><span class="doc">TOI 2219</span></a><a class="headerlink" href="#toi-2219" title="Permalink to this headline">¶</a></h2>
+<img alt="../_images/phase_plot_121.png" id="id24" src="../_images/phase_plot_121.png" />
+</div>
+<hr class="docutils" />
+<div class="section" id="toi-2247">
+<h2><a class="reference internal" href="toi_notebooks/toi_2247.html"><span class="doc">TOI 2247</span></a><a class="headerlink" href="#toi-2247" title="Permalink to this headline">¶</a></h2>
+<div class="admonition error">
+<p class="admonition-title">Error</p>
+<p>Phase plot generation failed. There may be underlying errors.</p>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="toi-2282">
+<h2><a class="reference internal" href="toi_notebooks/toi_2282.html"><span class="doc">TOI 2282</span></a><a class="headerlink" href="#toi-2282" title="Permalink to this headline">¶</a></h2>
+<img alt="../_images/phase_plot_122.png" id="id25" src="../_images/phase_plot_122.png" />
+</div>
+<hr class="docutils" />
+<div class="section" id="toi-2300">
+<h2><a class="reference internal" href="toi_notebooks/toi_2300.html"><span class="doc">TOI 2300</span></a><a class="headerlink" href="#toi-2300" title="Permalink to this headline">¶</a></h2>
+<img alt="../_images/phase_plot_123.png" id="id26" src="../_images/phase_plot_123.png" />
+<img alt="../_images/phase_plot_22.png" id="id27" src="../_images/phase_plot_22.png" />
+</div>
+<hr class="docutils" />
+<div class="section" id="toi-2314">
+<h2><a class="reference internal" href="toi_notebooks/toi_2314.html"><span class="doc">TOI 2314</span></a><a class="headerlink" href="#toi-2314" title="Permalink to this headline">¶</a></h2>
+<img alt="../_images/phase_plot_124.png" id="id28" src="../_images/phase_plot_124.png" />
+</div>
+<hr class="docutils" />
+<div class="section" id="toi-232">
+<h2><a class="reference internal" href="toi_notebooks/toi_232.html"><span class="doc">TOI 232</span></a><a class="headerlink" href="#toi-232" title="Permalink to this headline">¶</a></h2>
+<img alt="../_images/phase_plot_125.png" id="id29" src="../_images/phase_plot_125.png" />
+</div>
+<hr class="docutils" />
+<div class="section" id="toi-2328">
+<h2><a class="reference internal" href="toi_notebooks/toi_2328.html"><span class="doc">TOI 2328</span></a><a class="headerlink" href="#toi-2328" title="Permalink to this headline">¶</a></h2>
+<img alt="../_images/phase_plot_126.png" id="id30" src="../_images/phase_plot_126.png" />
+</div>
+<hr class="docutils" />
+<div class="section" id="toi-2353">
+<h2><a class="reference internal" href="toi_notebooks/toi_2353.html"><span class="doc">TOI 2353</span></a><a class="headerlink" href="#toi-2353" title="Permalink to this headline">¶</a></h2>
+<img alt="../_images/phase_plot_127.png" id="id31" src="../_images/phase_plot_127.png" />
+</div>
+<hr class="docutils" />
+<div class="section" id="toi-2363">
+<h2><a class="reference internal" href="toi_notebooks/toi_2363.html"><span class="doc">TOI 2363</span></a><a class="headerlink" href="#toi-2363" title="Permalink to this headline">¶</a></h2>
+<div class="admonition error">
+<p class="admonition-title">Error</p>
+<p>Phase plot generation failed. There may be underlying errors.</p>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="toi-2413">
+<h2><a class="reference internal" href="toi_notebooks/toi_2413.html"><span class="doc">TOI 2413</span></a><a class="headerlink" href="#toi-2413" title="Permalink to this headline">¶</a></h2>
+<img alt="../_images/phase_plot_128.png" id="id32" src="../_images/phase_plot_128.png" />
+</div>
+<hr class="docutils" />
+<div class="section" id="toi-2440">
+<h2><a class="reference internal" href="toi_notebooks/toi_2440.html"><span class="doc">TOI 2440</span></a><a class="headerlink" href="#toi-2440" title="Permalink to this headline">¶</a></h2>
+<img alt="../_images/phase_plot_129.png" id="id33" src="../_images/phase_plot_129.png" />
+</div>
+<hr class="docutils" />
+<div class="section" id="toi-2467">
+<h2><a class="reference internal" href="toi_notebooks/toi_2467.html"><span class="doc">TOI 2467</span></a><a class="headerlink" href="#toi-2467" title="Permalink to this headline">¶</a></h2>
+<img alt="../_images/phase_plot_130.png" id="id34" src="../_images/phase_plot_130.png" />
+</div>
+<hr class="docutils" />
+<div class="section" id="toi-254">
+<h2><a class="reference internal" href="toi_notebooks/toi_254.html"><span class="doc">TOI 254</span></a><a class="headerlink" href="#toi-254" title="Permalink to this headline">¶</a></h2>
+<img alt="../_images/phase_plot_131.png" id="id35" src="../_images/phase_plot_131.png" />
+</div>
+<hr class="docutils" />
+<div class="section" id="toi-2550">
+<h2><a class="reference internal" href="toi_notebooks/toi_2550.html"><span class="doc">TOI 2550</span></a><a class="headerlink" href="#toi-2550" title="Permalink to this headline">¶</a></h2>
+<img alt="../_images/phase_plot_132.png" id="id36" src="../_images/phase_plot_132.png" />
+</div>
+<hr class="docutils" />
+<div class="section" id="toi-2575">
+<h2><a class="reference internal" href="toi_notebooks/toi_2575.html"><span class="doc">TOI 2575</span></a><a class="headerlink" href="#toi-2575" title="Permalink to this headline">¶</a></h2>
+<img alt="../_images/phase_plot_133.png" id="id37" src="../_images/phase_plot_133.png" />
+</div>
+<hr class="docutils" />
+<div class="section" id="toi-2578">
+<h2><a class="reference internal" href="toi_notebooks/toi_2578.html"><span class="doc">TOI 2578</span></a><a class="headerlink" href="#toi-2578" title="Permalink to this headline">¶</a></h2>
+<div class="admonition error">
+<p class="admonition-title">Error</p>
+<p>Phase plot generation failed. There may be underlying errors.</p>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="toi-2580">
+<h2><a class="reference internal" href="toi_notebooks/toi_2580.html"><span class="doc">TOI 2580</span></a><a class="headerlink" href="#toi-2580" title="Permalink to this headline">¶</a></h2>
+<div class="admonition error">
+<p class="admonition-title">Error</p>
+<p>Phase plot generation failed. There may be underlying errors.</p>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="toi-2610">
+<h2><a class="reference internal" href="toi_notebooks/toi_2610.html"><span class="doc">TOI 2610</span></a><a class="headerlink" href="#toi-2610" title="Permalink to this headline">¶</a></h2>
+<img alt="../_images/phase_plot_134.png" id="id38" src="../_images/phase_plot_134.png" />
+</div>
+<hr class="docutils" />
+<div class="section" id="toi-2628">
+<h2><a class="reference internal" href="toi_notebooks/toi_2628.html"><span class="doc">TOI 2628</span></a><a class="headerlink" href="#toi-2628" title="Permalink to this headline">¶</a></h2>
+<div class="admonition error">
+<p class="admonition-title">Error</p>
+<p>Phase plot generation failed. There may be underlying errors.</p>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="toi-2640">
+<h2><a class="reference internal" href="toi_notebooks/toi_2640.html"><span class="doc">TOI 2640</span></a><a class="headerlink" href="#toi-2640" title="Permalink to this headline">¶</a></h2>
+<div class="admonition error">
+<p class="admonition-title">Error</p>
+<p>Phase plot generation failed. There may be underlying errors.</p>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="toi-2670">
+<h2><a class="reference internal" href="toi_notebooks/toi_2670.html"><span class="doc">TOI 2670</span></a><a class="headerlink" href="#toi-2670" title="Permalink to this headline">¶</a></h2>
+<div class="admonition error">
+<p class="admonition-title">Error</p>
+<p>Phase plot generation failed. There may be underlying errors.</p>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="toi-2798">
+<h2><a class="reference internal" href="toi_notebooks/toi_2798.html"><span class="doc">TOI 2798</span></a><a class="headerlink" href="#toi-2798" title="Permalink to this headline">¶</a></h2>
+<div class="admonition error">
+<p class="admonition-title">Error</p>
+<p>Phase plot generation failed. There may be underlying errors.</p>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="toi-282">
+<h2><a class="reference internal" href="toi_notebooks/toi_282.html"><span class="doc">TOI 282</span></a><a class="headerlink" href="#toi-282" title="Permalink to this headline">¶</a></h2>
+<div class="admonition error">
+<p class="admonition-title">Error</p>
+<p>Phase plot generation failed. There may be underlying errors.</p>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="toi-2835">
+<h2><a class="reference internal" href="toi_notebooks/toi_2835.html"><span class="doc">TOI 2835</span></a><a class="headerlink" href="#toi-2835" title="Permalink to this headline">¶</a></h2>
+<div class="admonition error">
+<p class="admonition-title">Error</p>
+<p>Phase plot generation failed. There may be underlying errors.</p>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="toi-2843">
+<h2><a class="reference internal" href="toi_notebooks/toi_2843.html"><span class="doc">TOI 2843</span></a><a class="headerlink" href="#toi-2843" title="Permalink to this headline">¶</a></h2>
+<div class="admonition error">
+<p class="admonition-title">Error</p>
+<p>Phase plot generation failed. There may be underlying errors.</p>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="toi-285">
+<h2><a class="reference internal" href="toi_notebooks/toi_285.html"><span class="doc">TOI 285</span></a><a class="headerlink" href="#toi-285" title="Permalink to this headline">¶</a></h2>
+<div class="admonition error">
+<p class="admonition-title">Error</p>
+<p>Phase plot generation failed. There may be underlying errors.</p>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="toi-2862">
+<h2><a class="reference internal" href="toi_notebooks/toi_2862.html"><span class="doc">TOI 2862</span></a><a class="headerlink" href="#toi-2862" title="Permalink to this headline">¶</a></h2>
+<div class="admonition error">
+<p class="admonition-title">Error</p>
+<p>Phase plot generation failed. There may be underlying errors.</p>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="toi-3008">
+<h2><a class="reference internal" href="toi_notebooks/toi_3008.html"><span class="doc">TOI 3008</span></a><a class="headerlink" href="#toi-3008" title="Permalink to this headline">¶</a></h2>
+<div class="admonition error">
+<p class="admonition-title">Error</p>
+<p>Phase plot generation failed. There may be underlying errors.</p>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="toi-3081">
+<h2><a class="reference internal" href="toi_notebooks/toi_3081.html"><span class="doc">TOI 3081</span></a><a class="headerlink" href="#toi-3081" title="Permalink to this headline">¶</a></h2>
+<div class="admonition error">
+<p class="admonition-title">Error</p>
+<p>Phase plot generation failed. There may be underlying errors.</p>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="toi-3112">
+<h2><a class="reference internal" href="toi_notebooks/toi_3112.html"><span class="doc">TOI 3112</span></a><a class="headerlink" href="#toi-3112" title="Permalink to this headline">¶</a></h2>
+<div class="admonition error">
+<p class="admonition-title">Error</p>
+<p>Phase plot generation failed. There may be underlying errors.</p>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="toi-3167">
+<h2><a class="reference internal" href="toi_notebooks/toi_3167.html"><span class="doc">TOI 3167</span></a><a class="headerlink" href="#toi-3167" title="Permalink to this headline">¶</a></h2>
+<div class="admonition error">
+<p class="admonition-title">Error</p>
+<p>Phase plot generation failed. There may be underlying errors.</p>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="toi-3172">
+<h2><a class="reference internal" href="toi_notebooks/toi_3172.html"><span class="doc">TOI 3172</span></a><a class="headerlink" href="#toi-3172" title="Permalink to this headline">¶</a></h2>
+<div class="admonition error">
+<p class="admonition-title">Error</p>
+<p>Phase plot generation failed. There may be underlying errors.</p>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="toi-3183">
+<h2><a class="reference internal" href="toi_notebooks/toi_3183.html"><span class="doc">TOI 3183</span></a><a class="headerlink" href="#toi-3183" title="Permalink to this headline">¶</a></h2>
+<div class="admonition error">
+<p class="admonition-title">Error</p>
+<p>Phase plot generation failed. There may be underlying errors.</p>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="toi-3205">
+<h2><a class="reference internal" href="toi_notebooks/toi_3205.html"><span class="doc">TOI 3205</span></a><a class="headerlink" href="#toi-3205" title="Permalink to this headline">¶</a></h2>
+<div class="admonition error">
+<p class="admonition-title">Error</p>
+<p>Phase plot generation failed. There may be underlying errors.</p>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="toi-3258">
+<h2><a class="reference internal" href="toi_notebooks/toi_3258.html"><span class="doc">TOI 3258</span></a><a class="headerlink" href="#toi-3258" title="Permalink to this headline">¶</a></h2>
+<div class="admonition error">
+<p class="admonition-title">Error</p>
+<p>Phase plot generation failed. There may be underlying errors.</p>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="toi-3264">
+<h2><a class="reference internal" href="toi_notebooks/toi_3264.html"><span class="doc">TOI 3264</span></a><a class="headerlink" href="#toi-3264" title="Permalink to this headline">¶</a></h2>
+<div class="admonition error">
+<p class="admonition-title">Error</p>
+<p>Phase plot generation failed. There may be underlying errors.</p>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="toi-328">
+<h2><a class="reference internal" href="toi_notebooks/toi_328.html"><span class="doc">TOI 328</span></a><a class="headerlink" href="#toi-328" title="Permalink to this headline">¶</a></h2>
+<img alt="../_images/phase_plot_135.png" id="id39" src="../_images/phase_plot_135.png" />
+</div>
+<hr class="docutils" />
+<div class="section" id="toi-3291">
+<h2><a class="reference internal" href="toi_notebooks/toi_3291.html"><span class="doc">TOI 3291</span></a><a class="headerlink" href="#toi-3291" title="Permalink to this headline">¶</a></h2>
+<div class="admonition error">
+<p class="admonition-title">Error</p>
+<p>Phase plot generation failed. There may be underlying errors.</p>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="toi-3294">
+<h2><a class="reference internal" href="toi_notebooks/toi_3294.html"><span class="doc">TOI 3294</span></a><a class="headerlink" href="#toi-3294" title="Permalink to this headline">¶</a></h2>
+<div class="admonition error">
+<p class="admonition-title">Error</p>
+<p>Phase plot generation failed. There may be underlying errors.</p>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="toi-3346">
+<h2><a class="reference internal" href="toi_notebooks/toi_3346.html"><span class="doc">TOI 3346</span></a><a class="headerlink" href="#toi-3346" title="Permalink to this headline">¶</a></h2>
+<div class="admonition error">
+<p class="admonition-title">Error</p>
+<p>Phase plot generation failed. There may be underlying errors.</p>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="toi-3347">
+<h2><a class="reference internal" href="toi_notebooks/toi_3347.html"><span class="doc">TOI 3347</span></a><a class="headerlink" href="#toi-3347" title="Permalink to this headline">¶</a></h2>
+<div class="admonition error">
+<p class="admonition-title">Error</p>
+<p>Phase plot generation failed. There may be underlying errors.</p>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="toi-3359">
+<h2><a class="reference internal" href="toi_notebooks/toi_3359.html"><span class="doc">TOI 3359</span></a><a class="headerlink" href="#toi-3359" title="Permalink to this headline">¶</a></h2>
+<div class="admonition error">
+<p class="admonition-title">Error</p>
+<p>Phase plot generation failed. There may be underlying errors.</p>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="toi-3390">
+<h2><a class="reference internal" href="toi_notebooks/toi_3390.html"><span class="doc">TOI 3390</span></a><a class="headerlink" href="#toi-3390" title="Permalink to this headline">¶</a></h2>
+<div class="admonition error">
+<p class="admonition-title">Error</p>
+<p>Phase plot generation failed. There may be underlying errors.</p>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="toi-3396">
+<h2><a class="reference internal" href="toi_notebooks/toi_3396.html"><span class="doc">TOI 3396</span></a><a class="headerlink" href="#toi-3396" title="Permalink to this headline">¶</a></h2>
+<div class="admonition error">
+<p class="admonition-title">Error</p>
+<p>Phase plot generation failed. There may be underlying errors.</p>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="toi-3427">
+<h2><a class="reference internal" href="toi_notebooks/toi_3427.html"><span class="doc">TOI 3427</span></a><a class="headerlink" href="#toi-3427" title="Permalink to this headline">¶</a></h2>
+<div class="admonition error">
+<p class="admonition-title">Error</p>
+<p>Phase plot generation failed. There may be underlying errors.</p>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="toi-3434">
+<h2><a class="reference internal" href="toi_notebooks/toi_3434.html"><span class="doc">TOI 3434</span></a><a class="headerlink" href="#toi-3434" title="Permalink to this headline">¶</a></h2>
+<div class="admonition error">
+<p class="admonition-title">Error</p>
+<p>Phase plot generation failed. There may be underlying errors.</p>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="toi-3457">
+<h2><a class="reference internal" href="toi_notebooks/toi_3457.html"><span class="doc">TOI 3457</span></a><a class="headerlink" href="#toi-3457" title="Permalink to this headline">¶</a></h2>
+<div class="admonition error">
+<p class="admonition-title">Error</p>
+<p>Phase plot generation failed. There may be underlying errors.</p>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="toi-346">
+<h2><a class="reference internal" href="toi_notebooks/toi_346.html"><span class="doc">TOI 346</span></a><a class="headerlink" href="#toi-346" title="Permalink to this headline">¶</a></h2>
+<img alt="../_images/phase_plot_136.png" id="id40" src="../_images/phase_plot_136.png" />
+</div>
+<hr class="docutils" />
+<div class="section" id="toi-3473">
+<h2><a class="reference internal" href="toi_notebooks/toi_3473.html"><span class="doc">TOI 3473</span></a><a class="headerlink" href="#toi-3473" title="Permalink to this headline">¶</a></h2>
+<div class="admonition error">
+<p class="admonition-title">Error</p>
+<p>Phase plot generation failed. There may be underlying errors.</p>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="toi-3481">
+<h2><a class="reference internal" href="toi_notebooks/toi_3481.html"><span class="doc">TOI 3481</span></a><a class="headerlink" href="#toi-3481" title="Permalink to this headline">¶</a></h2>
+<div class="admonition error">
+<p class="admonition-title">Error</p>
+<p>Phase plot generation failed. There may be underlying errors.</p>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="toi-3490">
+<h2><a class="reference internal" href="toi_notebooks/toi_3490.html"><span class="doc">TOI 3490</span></a><a class="headerlink" href="#toi-3490" title="Permalink to this headline">¶</a></h2>
+<div class="admonition error">
+<p class="admonition-title">Error</p>
+<p>Phase plot generation failed. There may be underlying errors.</p>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="toi-3527">
+<h2><a class="reference internal" href="toi_notebooks/toi_3527.html"><span class="doc">TOI 3527</span></a><a class="headerlink" href="#toi-3527" title="Permalink to this headline">¶</a></h2>
+<div class="admonition error">
+<p class="admonition-title">Error</p>
+<p>Phase plot generation failed. There may be underlying errors.</p>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="toi-3528">
+<h2><a class="reference internal" href="toi_notebooks/toi_3528.html"><span class="doc">TOI 3528</span></a><a class="headerlink" href="#toi-3528" title="Permalink to this headline">¶</a></h2>
+<div class="admonition error">
+<p class="admonition-title">Error</p>
+<p>Phase plot generation failed. There may be underlying errors.</p>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="toi-3541">
+<h2><a class="reference internal" href="toi_notebooks/toi_3541.html"><span class="doc">TOI 3541</span></a><a class="headerlink" href="#toi-3541" title="Permalink to this headline">¶</a></h2>
+<div class="admonition error">
+<p class="admonition-title">Error</p>
+<p>Phase plot generation failed. There may be underlying errors.</p>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="toi-3552">
+<h2><a class="reference internal" href="toi_notebooks/toi_3552.html"><span class="doc">TOI 3552</span></a><a class="headerlink" href="#toi-3552" title="Permalink to this headline">¶</a></h2>
+<div class="admonition error">
+<p class="admonition-title">Error</p>
+<p>Phase plot generation failed. There may be underlying errors.</p>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="toi-360">
+<h2><a class="reference internal" href="toi_notebooks/toi_360.html"><span class="doc">TOI 360</span></a><a class="headerlink" href="#toi-360" title="Permalink to this headline">¶</a></h2>
+<div class="admonition error">
+<p class="admonition-title">Error</p>
+<p>Phase plot generation failed. There may be underlying errors.</p>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="toi-3609">
+<h2><a class="reference internal" href="toi_notebooks/toi_3609.html"><span class="doc">TOI 3609</span></a><a class="headerlink" href="#toi-3609" title="Permalink to this headline">¶</a></h2>
+<div class="admonition error">
+<p class="admonition-title">Error</p>
+<p>Phase plot generation failed. There may be underlying errors.</p>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="toi-3614">
+<h2><a class="reference internal" href="toi_notebooks/toi_3614.html"><span class="doc">TOI 3614</span></a><a class="headerlink" href="#toi-3614" title="Permalink to this headline">¶</a></h2>
+<div class="admonition error">
+<p class="admonition-title">Error</p>
+<p>Phase plot generation failed. There may be underlying errors.</p>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="toi-3629">
+<h2><a class="reference internal" href="toi_notebooks/toi_3629.html"><span class="doc">TOI 3629</span></a><a class="headerlink" href="#toi-3629" title="Permalink to this headline">¶</a></h2>
+<div class="admonition error">
+<p class="admonition-title">Error</p>
+<p>Phase plot generation failed. There may be underlying errors.</p>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="toi-3643">
+<h2><a class="reference internal" href="toi_notebooks/toi_3643.html"><span class="doc">TOI 3643</span></a><a class="headerlink" href="#toi-3643" title="Permalink to this headline">¶</a></h2>
+<div class="admonition error">
+<p class="admonition-title">Error</p>
+<p>Phase plot generation failed. There may be underlying errors.</p>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="toi-3685">
+<h2><a class="reference internal" href="toi_notebooks/toi_3685.html"><span class="doc">TOI 3685</span></a><a class="headerlink" href="#toi-3685" title="Permalink to this headline">¶</a></h2>
+<div class="admonition error">
+<p class="admonition-title">Error</p>
+<p>Phase plot generation failed. There may be underlying errors.</p>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="toi-3695">
+<h2><a class="reference internal" href="toi_notebooks/toi_3695.html"><span class="doc">TOI 3695</span></a><a class="headerlink" href="#toi-3695" title="Permalink to this headline">¶</a></h2>
+<div class="admonition error">
+<p class="admonition-title">Error</p>
+<p>Phase plot generation failed. There may be underlying errors.</p>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="toi-373">
+<h2><a class="reference internal" href="toi_notebooks/toi_373.html"><span class="doc">TOI 373</span></a><a class="headerlink" href="#toi-373" title="Permalink to this headline">¶</a></h2>
+<img alt="../_images/phase_plot_137.png" id="id41" src="../_images/phase_plot_137.png" />
+</div>
+<hr class="docutils" />
+<div class="section" id="toi-3773">
+<h2><a class="reference internal" href="toi_notebooks/toi_3773.html"><span class="doc">TOI 3773</span></a><a class="headerlink" href="#toi-3773" title="Permalink to this headline">¶</a></h2>
+<div class="admonition error">
+<p class="admonition-title">Error</p>
+<p>Phase plot generation failed. There may be underlying errors.</p>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="toi-3776">
+<h2><a class="reference internal" href="toi_notebooks/toi_3776.html"><span class="doc">TOI 3776</span></a><a class="headerlink" href="#toi-3776" title="Permalink to this headline">¶</a></h2>
+<div class="admonition error">
+<p class="admonition-title">Error</p>
+<p>Phase plot generation failed. There may be underlying errors.</p>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="toi-3798">
+<h2><a class="reference internal" href="toi_notebooks/toi_3798.html"><span class="doc">TOI 3798</span></a><a class="headerlink" href="#toi-3798" title="Permalink to this headline">¶</a></h2>
+<div class="admonition error">
+<p class="admonition-title">Error</p>
+<p>Phase plot generation failed. There may be underlying errors.</p>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="toi-3820">
+<h2><a class="reference internal" href="toi_notebooks/toi_3820.html"><span class="doc">TOI 3820</span></a><a class="headerlink" href="#toi-3820" title="Permalink to this headline">¶</a></h2>
+<div class="admonition error">
+<p class="admonition-title">Error</p>
+<p>Phase plot generation failed. There may be underlying errors.</p>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="toi-3876">
+<h2><a class="reference internal" href="toi_notebooks/toi_3876.html"><span class="doc">TOI 3876</span></a><a class="headerlink" href="#toi-3876" title="Permalink to this headline">¶</a></h2>
+<div class="admonition error">
+<p class="admonition-title">Error</p>
+<p>Phase plot generation failed. There may be underlying errors.</p>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="toi-3973">
+<h2><a class="reference internal" href="toi_notebooks/toi_3973.html"><span class="doc">TOI 3973</span></a><a class="headerlink" href="#toi-3973" title="Permalink to this headline">¶</a></h2>
+<div class="admonition error">
+<p class="admonition-title">Error</p>
+<p>Phase plot generation failed. There may be underlying errors.</p>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="toi-4017">
+<h2><a class="reference internal" href="toi_notebooks/toi_4017.html"><span class="doc">TOI 4017</span></a><a class="headerlink" href="#toi-4017" title="Permalink to this headline">¶</a></h2>
+<div class="admonition error">
+<p class="admonition-title">Error</p>
+<p>Phase plot generation failed. There may be underlying errors.</p>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="toi-4024">
+<h2><a class="reference internal" href="toi_notebooks/toi_4024.html"><span class="doc">TOI 4024</span></a><a class="headerlink" href="#toi-4024" title="Permalink to this headline">¶</a></h2>
+<div class="admonition error">
+<p class="admonition-title">Error</p>
+<p>Phase plot generation failed. There may be underlying errors.</p>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="toi-4025">
+<h2><a class="reference internal" href="toi_notebooks/toi_4025.html"><span class="doc">TOI 4025</span></a><a class="headerlink" href="#toi-4025" title="Permalink to this headline">¶</a></h2>
+<div class="admonition error">
+<p class="admonition-title">Error</p>
+<p>Phase plot generation failed. There may be underlying errors.</p>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="toi-4048">
+<h2><a class="reference internal" href="toi_notebooks/toi_4048.html"><span class="doc">TOI 4048</span></a><a class="headerlink" href="#toi-4048" title="Permalink to this headline">¶</a></h2>
+<div class="admonition error">
+<p class="admonition-title">Error</p>
+<p>Phase plot generation failed. There may be underlying errors.</p>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="toi-4082">
+<h2><a class="reference internal" href="toi_notebooks/toi_4082.html"><span class="doc">TOI 4082</span></a><a class="headerlink" href="#toi-4082" title="Permalink to this headline">¶</a></h2>
+<div class="admonition error">
+<p class="admonition-title">Error</p>
+<p>Phase plot generation failed. There may be underlying errors.</p>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="toi-4083">
+<h2><a class="reference internal" href="toi_notebooks/toi_4083.html"><span class="doc">TOI 4083</span></a><a class="headerlink" href="#toi-4083" title="Permalink to this headline">¶</a></h2>
+<div class="admonition error">
+<p class="admonition-title">Error</p>
+<p>Phase plot generation failed. There may be underlying errors.</p>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="toi-4115">
+<h2><a class="reference internal" href="toi_notebooks/toi_4115.html"><span class="doc">TOI 4115</span></a><a class="headerlink" href="#toi-4115" title="Permalink to this headline">¶</a></h2>
+<div class="admonition error">
+<p class="admonition-title">Error</p>
+<p>Phase plot generation failed. There may be underlying errors.</p>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="toi-4192">
+<h2><a class="reference internal" href="toi_notebooks/toi_4192.html"><span class="doc">TOI 4192</span></a><a class="headerlink" href="#toi-4192" title="Permalink to this headline">¶</a></h2>
+<div class="admonition error">
+<p class="admonition-title">Error</p>
+<p>Phase plot generation failed. There may be underlying errors.</p>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="toi-421">
+<h2><a class="reference internal" href="toi_notebooks/toi_421.html"><span class="doc">TOI 421</span></a><a class="headerlink" href="#toi-421" title="Permalink to this headline">¶</a></h2>
+<div class="admonition error">
+<p class="admonition-title">Error</p>
+<p>Phase plot generation failed. There may be underlying errors.</p>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="toi-4216">
+<h2><a class="reference internal" href="toi_notebooks/toi_4216.html"><span class="doc">TOI 4216</span></a><a class="headerlink" href="#toi-4216" title="Permalink to this headline">¶</a></h2>
+<div class="admonition error">
+<p class="admonition-title">Error</p>
+<p>Phase plot generation failed. There may be underlying errors.</p>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="toi-4239">
+<h2><a class="reference internal" href="toi_notebooks/toi_4239.html"><span class="doc">TOI 4239</span></a><a class="headerlink" href="#toi-4239" title="Permalink to this headline">¶</a></h2>
+<div class="admonition error">
+<p class="admonition-title">Error</p>
+<p>Phase plot generation failed. There may be underlying errors.</p>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="toi-424">
+<h2><a class="reference internal" href="toi_notebooks/toi_424.html"><span class="doc">TOI 424</span></a><a class="headerlink" href="#toi-424" title="Permalink to this headline">¶</a></h2>
+<img alt="../_images/phase_plot_138.png" id="id42" src="../_images/phase_plot_138.png" />
+</div>
+<hr class="docutils" />
+<div class="section" id="toi-4286">
+<h2><a class="reference internal" href="toi_notebooks/toi_4286.html"><span class="doc">TOI 4286</span></a><a class="headerlink" href="#toi-4286" title="Permalink to this headline">¶</a></h2>
+<div class="admonition error">
+<p class="admonition-title">Error</p>
+<p>Phase plot generation failed. There may be underlying errors.</p>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="toi-4376">
+<h2><a class="reference internal" href="toi_notebooks/toi_4376.html"><span class="doc">TOI 4376</span></a><a class="headerlink" href="#toi-4376" title="Permalink to this headline">¶</a></h2>
+<div class="admonition error">
+<p class="admonition-title">Error</p>
+<p>Phase plot generation failed. There may be underlying errors.</p>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="toi-4397">
+<h2><a class="reference internal" href="toi_notebooks/toi_4397.html"><span class="doc">TOI 4397</span></a><a class="headerlink" href="#toi-4397" title="Permalink to this headline">¶</a></h2>
+<div class="admonition error">
+<p class="admonition-title">Error</p>
+<p>Phase plot generation failed. There may be underlying errors.</p>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="toi-4453">
+<h2><a class="reference internal" href="toi_notebooks/toi_4453.html"><span class="doc">TOI 4453</span></a><a class="headerlink" href="#toi-4453" title="Permalink to this headline">¶</a></h2>
+<img alt="../_images/phase_plot_139.png" id="id43" src="../_images/phase_plot_139.png" />
+</div>
+<hr class="docutils" />
+<div class="section" id="toi-470">
+<h2><a class="reference internal" href="toi_notebooks/toi_470.html"><span class="doc">TOI 470</span></a><a class="headerlink" href="#toi-470" title="Permalink to this headline">¶</a></h2>
+<img alt="../_images/phase_plot_140.png" id="id44" src="../_images/phase_plot_140.png" />
+</div>
+<hr class="docutils" />
+<div class="section" id="toi-490">
+<h2><a class="reference internal" href="toi_notebooks/toi_490.html"><span class="doc">TOI 490</span></a><a class="headerlink" href="#toi-490" title="Permalink to this headline">¶</a></h2>
+<img alt="../_images/phase_plot_141.png" id="id45" src="../_images/phase_plot_141.png" />
+</div>
+<hr class="docutils" />
+<div class="section" id="toi-514">
+<h2><a class="reference internal" href="toi_notebooks/toi_514.html"><span class="doc">TOI 514</span></a><a class="headerlink" href="#toi-514" title="Permalink to this headline">¶</a></h2>
+<img alt="../_images/phase_plot_142.png" id="id46" src="../_images/phase_plot_142.png" />
+</div>
+<hr class="docutils" />
+<div class="section" id="toi-526">
+<h2><a class="reference internal" href="toi_notebooks/toi_526.html"><span class="doc">TOI 526</span></a><a class="headerlink" href="#toi-526" title="Permalink to this headline">¶</a></h2>
+<img alt="../_images/phase_plot_143.png" id="id47" src="../_images/phase_plot_143.png" />
+</div>
+<hr class="docutils" />
+<div class="section" id="toi-541">
+<h2><a class="reference internal" href="toi_notebooks/toi_541.html"><span class="doc">TOI 541</span></a><a class="headerlink" href="#toi-541" title="Permalink to this headline">¶</a></h2>
+<img alt="../_images/phase_plot_144.png" id="id48" src="../_images/phase_plot_144.png" />
+</div>
+<hr class="docutils" />
+<div class="section" id="toi-648">
+<h2><a class="reference internal" href="toi_notebooks/toi_648.html"><span class="doc">TOI 648</span></a><a class="headerlink" href="#toi-648" title="Permalink to this headline">¶</a></h2>
+<div class="admonition error">
+<p class="admonition-title">Error</p>
+<p>Phase plot generation failed. There may be underlying errors.</p>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="toi-650">
+<h2><a class="reference internal" href="toi_notebooks/toi_650.html"><span class="doc">TOI 650</span></a><a class="headerlink" href="#toi-650" title="Permalink to this headline">¶</a></h2>
+<div class="admonition error">
+<p class="admonition-title">Error</p>
+<p>Phase plot generation failed. There may be underlying errors.</p>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="toi-660">
+<h2><a class="reference internal" href="toi_notebooks/toi_660.html"><span class="doc">TOI 660</span></a><a class="headerlink" href="#toi-660" title="Permalink to this headline">¶</a></h2>
+<div class="admonition error">
+<p class="admonition-title">Error</p>
+<p>Phase plot generation failed. There may be underlying errors.</p>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="toi-731">
+<h2><a class="reference internal" href="toi_notebooks/toi_731.html"><span class="doc">TOI 731</span></a><a class="headerlink" href="#toi-731" title="Permalink to this headline">¶</a></h2>
+<img alt="../_images/phase_plot_145.png" id="id49" src="../_images/phase_plot_145.png" />
+</div>
+<hr class="docutils" />
+<div class="section" id="toi-751">
+<h2><a class="reference internal" href="toi_notebooks/toi_751.html"><span class="doc">TOI 751</span></a><a class="headerlink" href="#toi-751" title="Permalink to this headline">¶</a></h2>
+<img alt="../_images/phase_plot_146.png" id="id50" src="../_images/phase_plot_146.png" />
+</div>
+<hr class="docutils" />
+<div class="section" id="toi-827">
+<h2><a class="reference internal" href="toi_notebooks/toi_827.html"><span class="doc">TOI 827</span></a><a class="headerlink" href="#toi-827" title="Permalink to this headline">¶</a></h2>
+<div class="admonition error">
+<p class="admonition-title">Error</p>
+<p>Phase plot generation failed. There may be underlying errors.</p>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="toi-833">
+<h2><a class="reference internal" href="toi_notebooks/toi_833.html"><span class="doc">TOI 833</span></a><a class="headerlink" href="#toi-833" title="Permalink to this headline">¶</a></h2>
+<img alt="../_images/phase_plot_147.png" id="id51" src="../_images/phase_plot_147.png" />
+</div>
+<hr class="docutils" />
+<div class="section" id="toi-850">
+<h2><a class="reference internal" href="toi_notebooks/toi_850.html"><span class="doc">TOI 850</span></a><a class="headerlink" href="#toi-850" title="Permalink to this headline">¶</a></h2>
+<div class="admonition error">
+<p class="admonition-title">Error</p>
+<p>Phase plot generation failed. There may be underlying errors.</p>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="toi-881">
+<h2><a class="reference internal" href="toi_notebooks/toi_881.html"><span class="doc">TOI 881</span></a><a class="headerlink" href="#toi-881" title="Permalink to this headline">¶</a></h2>
+<div class="admonition error">
+<p class="admonition-title">Error</p>
+<p>Phase plot generation failed. There may be underlying errors.</p>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="toi-892">
+<h2><a class="reference internal" href="toi_notebooks/toi_892.html"><span class="doc">TOI 892</span></a><a class="headerlink" href="#toi-892" title="Permalink to this headline">¶</a></h2>
+<div class="admonition error">
+<p class="admonition-title">Error</p>
+<p>Phase plot generation failed. There may be underlying errors.</p>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="toi-919">
+<h2><a class="reference internal" href="toi_notebooks/toi_919.html"><span class="doc">TOI 919</span></a><a class="headerlink" href="#toi-919" title="Permalink to this headline">¶</a></h2>
+<img alt="../_images/phase_plot_148.png" id="id52" src="../_images/phase_plot_148.png" />
+</div>
+<hr class="docutils" />
+<div class="section" id="toi-950">
+<h2><a class="reference internal" href="toi_notebooks/toi_950.html"><span class="doc">TOI 950</span></a><a class="headerlink" href="#toi-950" title="Permalink to this headline">¶</a></h2>
+<div class="admonition error">
+<p class="admonition-title">Error</p>
+<p>Phase plot generation failed. There may be underlying errors.</p>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="toi-995">
+<h2><a class="reference internal" href="toi_notebooks/toi_995.html"><span class="doc">TOI 995</span></a><a class="headerlink" href="#toi-995" title="Permalink to this headline">¶</a></h2>
+<img alt="../_images/phase_plot_149.png" id="id53" src="../_images/phase_plot_149.png" />
+</div>
+<div class="toctree-wrapper compound">
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./content"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+            
+
+
+
+<div class='prev-next-bottom'>
+    
+    <div id="prev">
+        <a class="left-prev" href="../citation.html" title="previous page">
+            <i class="prevnext-label fas fa-angle-left"></i>
+            <div class="prevnext-info">
+                <p class="prevnext-label">previous</p>
+                <p class="prevnext-title">Acknowledging/Citing TESS Atlas</p>
+            </div>
+        </a>
+    </div>
+     <div id="next">
+        <a class="right-next" href="toi_notebooks/toi_1015.html" title="next page">
+            <div class="prevnext-info">
+                <p class="prevnext-label">next</p>
+                <p class="prevnext-title">TESS Atlas fit for TOI 1015</p>
+            </div>
+            <i class="prevnext-label fas fa-angle-right"></i>
+        </a>
+     </div>
+
+</div>
+        
+        </div>
+    </div>
+    <footer class="footer">
+    <div class="container">
+      <p>
+        
+          By the TESS Atlas community<br/>
+        
+            &copy; Copyright 2021.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+
+  
+  </body>
+</html>
